@@ -1,0 +1,33 @@
+#mais-noticias {
+  .container {
+    .item {
+      display: none;
+      a{
+        text-decoration: none;
+      }
+      img {
+        margin-top: 25px;
+        height: auto;
+        width: 100%;
+      }
+      span{
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+    .btn-carregar {
+      width: 100%;
+      background-color: $azul-escuro;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 0%;
+      transition: all 600ms ease-in-out;
+      -webkit-transition: all 600ms ease-in-out;
+      -moz-transition: all 600ms ease-in-out;
+      -o-transition: all 600ms ease-in-out;
+    }
+  }
+}
+

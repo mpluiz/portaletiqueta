@@ -1,0 +1,27 @@
+#quem_somos{
+  .container{
+    .title{
+      font-size: 38px;
+      font-weight: 600;
+      padding-left: 15px;
+    }
+    .quem_somos{
+      float: none !important;
+      padding: 0px;
+      .content{
+      }
+      .img{
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .galeria{
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

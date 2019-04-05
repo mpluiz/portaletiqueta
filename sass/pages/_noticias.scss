@@ -1,0 +1,27 @@
+#noticias{
+  .container{
+    .item{
+      margin-top: 15px;
+      display: block;
+      height: 375px;
+      overflow: hidden;
+      .post{
+        display: block;
+        height: 215px;
+        overflow: hidden;
+        img{
+          width: 100%;
+          min-height: 215px;
+        }
+      }
+      .title-post{
+        text-decoration: none;
+        .post-description{
+          font-size: 13px;
+          line-height: 18px;
+          color: rgba(0,0,0,.7);
+        }
+      }
+    }
+  }
+}

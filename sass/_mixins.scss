@@ -1,0 +1,41 @@
+@mixin category($top, $left){
+  margin: 0px !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 2px 4px 2px 4px;
+  border: none;
+  border-radius: 0px;
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin categoria-noticia(){
+  .title{
+    font-size: $title-page;
+    font-weight: 800;
+    padding-left: 15px;
+    text-transform: uppercase;
+  }
+  .item {
+    margin-top: 25px;
+    a {
+      display: block;
+      text-decoration: none;
+      height: 300px;
+      img {
+        width: 100%;
+        height: 240px;
+      }
+    }
+    .title-post {
+      font-size: 18px;
+      color: #222222;
+      font-weight: 500;
+      margin: 10px 0 10px;
+    }
+  }
+}

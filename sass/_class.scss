@@ -1,0 +1,124 @@
+.no-padding{
+  padding: 0px;
+}
+
+.padding-lr{
+  padding: 0 15px 0 15px;
+}
+
+.m-top{
+  margin-top: 15px;
+}
+
+.m-top-2x{
+  margin-top: 25px;
+}
+
+.m-top-3x{
+  margin-top: 50px;
+}
+
+.m-right-2x{
+  margin-right: 25px;
+}
+
+.padding-bottom{
+  padding-bottom: 75px;
+}
+
+.logo-xs{
+  height: 25px;
+}
+
+.title-section{
+  text-decoration: none !important;
+  h3{
+    color: $black;
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+    line-height: 38px;
+    &:before{
+      content: "||";
+      color: #525252;
+      font-size: 26px;
+      margin-right: 10px;
+      font-weight: 700;
+      letter-spacing: -7px;
+    }
+  }
+}
+
+.title-publicidade{
+  h3{
+    color: #ccc;
+    font-weight: 700;
+    font-size: 10px;
+    border-bottom: 1px solid #ccc;
+    line-height: 38px;
+  }
+}
+
+.title-post{
+  text-decoration: none !important;
+  h4{
+    color: $black;
+    font-weight: 700;
+  }
+}
+
+.post-description{
+  font-size: 13px;
+  line-height: 18px;
+  color: rgba(0,0,0,.7);
+}
+
+.border {                                                                                                                                                                                                        
+  border-style: solid;                                                                                                                                                                                           
+  border-bottom-width: 2px;                                                                                                                                                                                      
+  border-top-width: 0;                                                                                                                                                                                           
+  border-right-width: 0;                                                                                                                                                                                         
+  border-left-width: 0;                                                                                                                                                                                          
+  color: #9C7F3D;                                                                                                                                                                                                
+}  
+
+.border-noticia {                                                                                                                                                                                                        
+  border-style: solid;                                                                                                                                                                                           
+  border-bottom-width: 1px;                                                                                                                                                                                      
+  border-top-width: 0;                                                                                                                                                                                           
+  border-right-width: 0;                                                                                                                                                                                         
+  border-left-width: 0;                                                                                                                                                                                          
+  color: #b1b1b1;                                                                                                                                                                                                
+}  
+
+.btn-ver-mais{
+  background-color: $azul-escuro;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-ver-mais:hover,.btn-ver-mais:active, .btn-ver-mais:target{
+  color: #fff;
+}
+
+.cursor-default{
+  cursor: default;
+}
+
+.title-publicidade{
+  color: #a2a2a2;
+}
+
+.cat-noticia{
+  @include category(5px, 5px);
+  background-color: #F94C3B;
+}
+
+.page-noticia{
+  @include category(5px, 20px);
+  background-color: #F94C3B;
+}
+
+.cat-gastronomia{
+  @include category(5px, 5px);
+  background-color: #d76101;
+}

@@ -1,0 +1,25 @@
+#gallery{
+  margin-left: auto;
+  margin-right: auto;
+  div{
+    a{
+      img{
+        display: none;
+        width: 100%;
+        height: 175px;
+      }
+    }
+  }
+}
+
+#loadmore{
+  width: 100%;
+  background-color: #0078a4;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gallerie-thumbbox{
+  display: none;
+}

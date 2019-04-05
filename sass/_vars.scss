@@ -1,0 +1,60 @@
+// FONT 
+$font-default: 'Open Sans', sans-serif;
+
+// COLORS
+$azul: #1D71B8;
+$azul-escuro: #1D71B8;
+$amarelo: #FDCF2B;
+$vermelho: #E6332A;
+$roxo: #951B81;
+$black: #1B1B1B;
+
+// LAYOUT
+$nav-black: $black;
+$bg-black: $black;
+$footer: #F1F1F1;
+
+
+// FONT SIZE
+$title-page: 38px;
+$title-section: 28px;
+$title: 22px;
+$description: 14px;
+
+$categoria-noticia: (
+  agronegocio,
+  arquitetura,
+  brasil,
+  cidade,
+  classificados,
+  clima,
+  comportamento,
+  cultura,
+  decoracao,
+  diversao,
+  economia,
+  educacao,
+  empreendedorismo,
+  empreendimento,
+  emprego,
+  encontro,
+  entretenimento,
+  esporte,
+  etiquetando,
+  eventos,
+  filantropia,
+  franca_regiao,
+  gastronomia,
+  homem,
+  informe_publicitario,
+  moda,
+  mulheres,
+  obras,
+  politica,
+  relax,
+  rh,
+  saude,
+  tecnologia,
+  transporte,
+  turismo
+)

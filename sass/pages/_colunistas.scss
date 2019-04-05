@@ -1,0 +1,39 @@
+#colunistas{
+  .container{
+    padding: 0px;
+    .title{
+      font-size: $title-page;
+      font-weight: 600;
+      padding-left: 15px;
+    }      
+    .circle {
+      background-color: #ccc;
+      border-radius: 50%;
+      width: 125px;
+      height: 125px;
+      overflow: hidden;
+      position: relative;
+      float: left;
+      img {
+        position: absolute;
+        // bottom: 0;
+        width: 100%;
+        height: auto;
+        // padding: 0 10px 0 10px;
+      }
+    }
+    .info {
+      margin: 15px 0 0 15px;
+      float: left;
+      max-width: 66%;
+      .title{
+        font-size: 16px;
+      }
+      .description{
+        margin: 10px 0 0 15px;
+        font-size: 14px;
+        // font-weight: 600;
+      }
+    }
+  }
+}

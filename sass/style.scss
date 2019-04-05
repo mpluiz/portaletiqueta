@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+@import '../assets/vendor/bootstrap/stylesheets/bootstrap';
+@import 'compass';
+@import 'vars';
+@import 'mixins';
+@import 'class';
+
+// BASE
+@import 'base/normalize';
+
+// LAYOUT
+@import 'layouts/header';
+@import 'layouts/nav';
+@import 'layouts/footer';
+@import 'layouts/author';
+@import 'layouts/single';
+@import 'layouts/search';
+@import 'layouts/comments';
+@import 'layouts/error404';
+
+// PAGES
+@import 'pages/home-page';
+@import 'pages/noticias';
+@import 'pages/contato';
+@import 'pages/guias';
+@import 'pages/edicoes';
+@import 'pages/eventos';
+@import 'pages/quem_somos';
+@import 'pages/parceiros';
+@import 'pages/expediente';
+@import 'pages/anuncie';
+@import 'pages/onde_encontrar';
+@import 'pages/categoria-noticia';
+@import 'pages/promocao';
+@import 'pages/colunistas';
+@import 'pages/tv_etiqueta';
+
+// PAGES/ INCLUDES
+@import 'includes/noticias';
+@import 'includes/publicidade_interna';
+@import 'includes/modal-img';

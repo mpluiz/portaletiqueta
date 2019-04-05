@@ -1,0 +1,64 @@
+footer {
+  margin-top: 25px;
+  height: 400px;
+  border-top: 1.5px solid #ccc;
+  .container{
+    margin-top: 50px;
+    padding: 0px;
+    .logo.rede-social{
+      .row{
+        a{
+          font-size: 24px;
+          color: #B4B4B4;
+          margin-left: 15px;
+        }
+      }
+    }
+    .noticias, .canais, .produtos, .contato{
+      .title{
+        font-size: 18px;
+        color: #333;
+      }
+      a{
+        text-decoration: none;
+        p{
+          margin: 0 0 7px;
+          font-size: 14px;
+          color: #838383;
+        }
+      }
+    }
+  }
+
+  .about{
+    margin-top: 50px;
+    border-top: 0.5px solid #ccc;
+    .container{
+      margin-top: 25px;
+      .direitos{
+        p{
+          font-size: 13px;
+          color: #838383;
+        }
+      }
+      .conteudo{
+        text-align: center;
+      }
+      .produzido{
+        border-left: 0.5px solid #ccc;
+        height: 75px; 
+      }
+    }
+  }
+
+  .scrolltotop{
+    background-color: rgba(0,0,0,.5);
+    color: #fff;
+    display: none;
+    padding: 0px 10px 3px 10px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 25px;
+    right: 25px;
+  }
+}

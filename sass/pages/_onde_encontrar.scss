@@ -1,0 +1,28 @@
+#onde_encontrar{
+  .container{
+    padding: 0px;
+    .title{
+      font-size: $title-page;
+      font-weight: 600;
+      padding-left: 15px;
+    }
+    .onde_encontrar{
+      padding: 0px;
+      .article{
+        border: 1px solid #ccc;
+        padding: 25px 10px 25px 25px;
+        height: 200px;
+        img{
+          float: left;
+          min-width: 175px;
+          max-height: 155px;
+        }
+        p{
+          font-size: $description;
+          font-weight: 700;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

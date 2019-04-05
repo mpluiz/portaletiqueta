@@ -1,0 +1,35 @@
+#publicidade-interna{
+  .publicidade-lateral{
+    .img-full{
+      padding: 0px;
+      display: block;
+      height: 450px;
+      overflow: hidden;
+      img{
+        width: 100%;
+        min-height: 450px;
+      }
+    }
+    .img-1{
+      padding: 0px;
+      display: block;
+      height: 215px;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .img-2{
+      padding: 0px;
+      display: block;
+      height: 215px;
+      overflow: hidden;
+      margin-top: 15px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

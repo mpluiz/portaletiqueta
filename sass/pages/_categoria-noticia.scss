@@ -1,0 +1,5 @@
+@each $noticia in $categoria-noticia{
+  #noticias-#{$noticia}{
+    @include categoria-noticia();
+  }
+}
