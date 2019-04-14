@@ -28,14 +28,14 @@
   $query = array('category_name' => 'promocoes', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
   $promocoes = get_posts($query);
 
-  // $query = array('category_name' => 'radares', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
-  // $radares = get_posts($query);
+  $query = array('category_name' => 'radares', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
+  $radares = get_posts($query);
 
-  // $query = array('category_name' => '14', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
-  // $blogs_e_colunas = get_posts($query);
+  $query = array('category_name' => '14', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
+  $blogs_e_colunas = get_posts($query);
 
-  // $query = array('category_name' => '15', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
-  // $publicidade_personalizada = get_posts($query);
+  $query = array('category_name' => '15', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
+  $publicidade_personalizada = get_posts($query);
 
   $users = get_users();
   shuffle($users);
