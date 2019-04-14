@@ -152,7 +152,7 @@ if (is_single() ){
     <div class="col-md-3 previsao">
 <?php
     $today = date('Y-m-d');
-    $query = $wpdb->get_results('SELECT * FROM wp_clima');
+    $query = $wpdb->get_results('SELECT * FROM pte_clima');
 
     if($today == $query[0]->data){
       $cidade = $query[0]->cidade;
@@ -166,7 +166,7 @@ if (is_single() ){
       $max = $previsao['data'][0]['temperature']['max'];
       $min = $previsao['data'][0]['temperature']['min'];
       $query = $wpdb->query('
-                                UPDATE wp_clima SET
+                                UPDATE pte_clima SET
                                   cidade = "'.$cidade.'",
                                   icone = "'.$icone.'",
                                   `max` = '.$max.',
@@ -233,27 +233,16 @@ if (is_single() ){
             <a class="button-dropdown" href="/noticias">NOTÍCIAS <span class="caret"></span></a>
             <ul class="dropdown-menu row noticias">
               <li class="col-md-6">
-                <a href="/agronegocio">AGRONEGÓCIO</a>
-                <a href="/animais">ANIMAIS</a>
-                <a href="/aniversario-de-franca">ANIVERSÁRIO DE FRANCA</a>
-                <a href="/arquitetura">ARQUITETURA</a>
-                <a href="/arte">ARTE</a>
+      	        <a href="/agronegocio">AGRONEGÓCIO</a>
+                <a href="/arquitetura-e-decoracao">ARQUITETURA E DECORAÇÃO</a>
                 <a href="/brasil">BRASIL</a>
-                <a href="/cidadania">CIDADANIA</a>
                 <a href="/cidade">CIDADE</a>
                 <a href="/classificados">CLASSIFICADOS</a>
                 <a href="/clima">CLIMA</a>
-                <a href="/coach">COACH</a>
                 <a href="/comportamento">COMPORTAMENTO</a>
                 <a href="/cotidiano">COTIDIANO</a>
                 <a href="/cultura">CULTURA</a>
-                <a href="/decoracao">DECORAÇÃO</a>
-                <a href="/denuncia">DENÚNCIA</a>
-                <a href="/divirta-se">DIVIRTA-SE</a>
                 <a href="/economia">ECONOMIA</a>
-                <a href="/educacao">EDUCAÇÃO</a>
-                <a href="/eleicoes">ELEIÇÕES</a>
-                <a href="/empoderamento">EMPODERAMENTO</a>
                 <a href="/empreendedorismo">EMPREEDEDORISMO</a>
                 <a href="/emprego">EMPREGO</a>
                 <a href="/encontro">ENCONTRO</a>
@@ -261,43 +250,25 @@ if (is_single() ){
                 <a href="/erramos">ERRAMOS</a>
                 <a href="/especial">ESPECIAL</a>
                 <a href="/esporte">ESPORTE</a>
-                <a href="/estetica">ESTÉTICA</a>
                 <a href="/etiquetando">ETIQUETANDO</a>
-                <a href="/evento">EVENTO</a>
-                <a href="/filantropia">FILANTROPIA</a>
-                <a href="/financas">FINANÇAS</a>
-                <a href="/franca-e-regiao">FRANCA E REGIÃO</a>
               </li>
               <li class="col-md-6">
                 <a href="/gastronomia">GASTRONOMIA</a>
-                <a href="/geek">GEEK</a>
-                <a href="/homem">HOMEM</a>
-                <a href="/inauguracao">INAUGURAÇÃO</a>
                 <a href="/internet">INTERNET</a>
-                <a href="/lazer">LAZER</a>
-                <a href="/lideranca">LIDERANÇA</a>
                 <a href="/moda">MODA</a>
-                <a href="/mulher">MULHER</a>
                 <a href="/mundo">MUNDO</a>
                 <a href="/natureza">NATUREZA</a>
                 <a href="/negocios">NEGÓCIOS</a>
-                <a href="/obras">OBRAS</a>
                 <a href="/open-business">OPEN BUSINESS</a>
                 <a href="/pet">PET</a>
-                <a href="/poder">PODER</a>
                 <a href="/politica">POLÍTICA</a>
                 <a href="/prefeitura">PREFEITURA</a>
                 <a href="/publieditorial">PUBLIEDITORIAL</a>
-                <a href="/qualidade-de-vida">QUALIDADE DE VIDA</a>
-                <a href="/relax">RELAX</a>
                 <a href="/religiao">RELIGIÃO</a>
-                <a href="/rh">RH</a>
                 <a href="/saude">SAÚDE</a>
                 <a href="/seu-dinheiro">SEU DINHEIRO</a>
                 <a href="/social">SOCIAL</a>
                 <a href="/tecnologia">TECNOLOGIA</a>
-                <a href="/transito">TRÂNSITO</a>
-                <a href="/transporte">TRANSPORTE</a>
                 <a href="/turismo">TURISMO</a>
                 <a href="/urgente">URGENTE</a>
                 <a href="/vida-e-estilo">VIDA E ESTILO</a>
