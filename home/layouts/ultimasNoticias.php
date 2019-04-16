@@ -27,7 +27,10 @@
           } else if ($thumbnail != false && $ultimas_noticias == true && $chamada_sem_foto == false) {
             echo '<div class="col-md-6 noticia-dupla">
                     <div class="box-imagem">
-                      <img src="'.$thumbnail.'">
+                      <a href='.get_permalink($id).'>
+                        <img src="'.$thumbnail.'">
+                        <label class="cat-noticia">'.$category.'</label>
+                      </a>
                     </div>
                     <div class="box-info">
                       <a href='.get_permalink($id).'>
