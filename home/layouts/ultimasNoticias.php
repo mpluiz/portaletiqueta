@@ -3,31 +3,50 @@
     
     <div class="col-md-8">  
       <a class="title-section" href="/noticias/ultimas-noticias/"><h3>ÚLTIMAS NOTÍCIAS</h3></a>
-      <div class="ultimas_noticias owl-carousel owl-theme">
+      <div class="row">
       <?php
+        $count = 0;
+
         foreach($noticias as $noticia){
           $id = $noticia->ID;
           $ultimas_noticias = get_field('ultimas_noticias', $id);
+          $chamada_sem_foto = get_field('chamada_sem_foto', $id);
+          $descricao = get_field('descricao', $id);
+          $category = get_the_category($id)[0]->name;
           $thumbnail = get_thumbnail($id);
-          if($thumbnail != ''){
-            if($ultimas_noticias == true){
-              echo '
-                <div class="item"> 
-                  <a class="post" href='.get_permalink($id).'>
-                    <img src='.$thumbnail.'>
-                    <p class="cat-noticia">'.get_field('categorias', $id).'</p>           
-                  </a>
-                  <a class="title-post" href='.get_permalink($id).'>
-                    <h4>'.$noticia->post_title.'</h4>
-                    <p class="post-description">'.get_field('descricao', $id).'</p>
-                  </a>
-                </div>
-              ';
-            }
+
+          if ($thumbnail == false && $ultimas_noticias == true && $chamada_sem_foto == true) {
+            echo '<div class="col-md-12 noticia-sem-foto">
+                   <a href='.get_permalink($id).'>
+                     <h4>'.$noticia->post_title.'</h4>
+                   </a>
+                   <label class="descricao">'.$descricao.'</label>
+                   <div class="separador"></div>
+              </div>';
+            $count ++;
+          } else if ($thumbnail != false && $ultimas_noticias == true && $chamada_sem_foto == false) {
+            echo '<div class="col-md-6 noticia-dupla">
+                    <div class="box-imagem">
+                      <img src="'.$thumbnail.'">
+                    </div>
+                    <div class="box-info">
+                      <a href='.get_permalink($id).'>
+                        <label class="title">'.$noticia->post_title.'</label>
+                      </a>
+                      <a href='.get_permalink($id).'>
+                        <label class="descricao">'.$descricao.'</label>
+                      </a>
+                    </div>
+                  </div>';
+            $count ++;
+          } 
+          
+          if ($count == 3) {
+            break;
           }
         }
       ?>
-      </div>  <!-- /.Carousel -->
+      </div>
     </div>  <!-- /.Col-8 -->
         
     <div class="col-md-4 publicidade-lateral">

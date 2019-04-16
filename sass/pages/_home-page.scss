@@ -12,69 +12,151 @@ body {
   }
 }
 
-#ultimas_noticias, #social, #mais_populares{
-  .container{
+#ultimas_noticias {
+  .container {
     padding: 0px;
-    .ultimas_noticias, .social, .mais_populares{
-      .item{
-        .post{
-          display: block;
-          height: 375px;
-          overflow: hidden;
-          img{
-            width: 100%;
-            height: auto;
+
+    .noticia-sem-foto {
+      padding: 0 15px 25px 15px;
+
+      a {
+        text-decoration: none;
+
+        h4 {
+          font-size: 32px;
+          font-weight: bold;
+          color: #1B1B1B;
+        }
+      }
+
+      .descricao {
+        font-size: 16px;
+      }
+
+      .separador {
+        border-bottom: 0.5px solid #ccc;
+        margin-top: 15px;
+      }
+    }
+
+    .noticia-dupla {
+      .box-imagem {
+        display: block;
+        max-height: 225px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .box-info {
+        a {
+          text-decoration: none;
+
+          .title {
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 10px;
+            color: #1B1B1B;
+            cursor: pointer;
           }
         }
-        .title-post{
+
+        a {
           text-decoration: none;
-          .post-description{
-            font-size: 13px;
-            line-height: 18px;
-            color: rgba(0,0,0,.7);
+
+          .descricao {
+            font-size: 14px;
+            font-weight: normal;
+            color: #1B1B1B;
+            cursor: pointer;
           }
         }
       }
     }
-    .publicidade-lateral{
-      .img-full{
+  }
+}
+
+#social,
+#mais_populares {
+  .container {
+    padding: 0px;
+
+    .ultimas_noticias,
+    .social,
+    .mais_populares {
+      .item {
+        .post {
+          display: block;
+          height: 375px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .title-post {
+          text-decoration: none;
+
+          .post-description {
+            font-size: 13px;
+            line-height: 18px;
+            color: rgba(0, 0, 0, .7);
+          }
+        }
+      }
+    }
+
+    .publicidade-lateral {
+      .img-full {
         padding: 0px;
         display: block;
         height: 450px;
         overflow: hidden;
-        img{
+
+        img {
           width: 100%;
           min-height: 450px;
         }
       }
-      .img-1{
+
+      .img-1 {
         padding: 0px;
         display: block;
         height: 215px;
         overflow: hidden;
-        img{
+
+        img {
           width: 100%;
           height: auto;
         }
       }
-      .img-2{
+
+      .img-2 {
         padding: 0px;
         display: block;
         height: 215px;
         overflow: hidden;
         margin-top: 15px;
-        img{
+
+        img {
           width: 100%;
           height: auto;
         }
       }
     }
-    .publicidade-inferior{
+
+    .publicidade-inferior {
       padding: 0px;
-      .title-publicidade{
+
+      .title-publicidade {
         padding: 0 15px 0 15px;
       }
-      img{
+
+      img {
         width: 100%;
         height: auto;
       }
@@ -82,45 +164,56 @@ body {
   }
 }
 
-#noticias_destaque{
+#noticias_destaque {
   margin-top: 25px;
-  .container{
+
+  .container {
     padding: 0px;
-    .encontro, .cidade, .politica{
-      .principal{
+
+    .encontro,
+    .cidade,
+    .politica {
+      .principal {
         display: block;
         height: 350px;
         overflow: hidden;
         margin-bottom: 15px;
         border-bottom: 1px solid #ccc;
-        .post{
+
+        .post {
           display: block;
           height: 220px;
           overflow: hidden;
-          img{
+
+          img {
             width: 100%;
             min-height: 220px;
           }
         }
-      }      
-      .sub{
+      }
+
+      .sub {
         display: block;
         height: 115px;
         overflow: hidden;
         margin-bottom: 15px;
         border-bottom: 1px solid #ccc;
-        .post{
+
+        .post {
           text-decoration: none !important;
           display: block;
           height: 100px;
           overflow: hidden;
-          img{
+
+          img {
             width: 40%;
-            min-height: 100px;;
+            min-height: 100px;
+            ;
             float: left;
             margin-right: 15px;
           }
-          h4{
+
+          h4 {
             text-decoration: none !important;
             color: #151515;
             font-weight: 700;
@@ -132,34 +225,42 @@ body {
   }
 }
 
-#destaque, #gastronomia{
-  .container{
-    .destaque{
-      .item{
-        .post{
+#destaque,
+#gastronomia {
+  .container {
+    .destaque {
+      .item {
+        .post {
           display: block;
           height: 175px;
           overflow: hidden;
-          img{
+
+          img {
             width: 100%;
-            min-height: 175px;;
+            min-height: 175px;
+            ;
           }
         }
-        .title-post{
+
+        .title-post {
           text-decoration: none;
-          .post-description{
+
+          .post-description {
             font-size: 13px;
             line-height: 18px;
-            color: rgba(0,0,0,.7);
+            color: rgba(0, 0, 0, .7);
           }
         }
       }
-      .owl-nav{
+
+      .owl-nav {
         position: absolute;
         top: -65px;
         right: 0px;
-        .owl-prev, .owl-next{
-          background-color: rgba(0,0,0,0);
+
+        .owl-prev,
+        .owl-next {
+          background-color: rgba(0, 0, 0, 0);
           border: solid 0.5px #151515;
           color: #151515;
         }
@@ -168,15 +269,18 @@ body {
   }
 }
 
-#publicidade_inferior{
-  .container{
+#publicidade_inferior {
+  .container {
     padding: 0px;
-    .publicidade-inferior{
+
+    .publicidade-inferior {
       padding: 0px;
-      .title-publicidade{
+
+      .title-publicidade {
         padding: 0 15px 0 15px;
       }
-      img{
+
+      img {
         width: 100%;
         height: auto;
       }
@@ -188,24 +292,30 @@ body {
   margin-top: 25px;
   background-color: #151515;
   padding-bottom: 50px;
+
   .container {
     padding-top: 50px;
+
     .title-videos {
       color: #fff;
       font-weight: 600;
       font-size: 28px;
     }
+
     .videos {
       margin-top: 15px;
+
       .video-principal {
         padding-right: 15px;
       }
+
       .lista-videos {
         span {
           color: #fff;
           font-size: 18px;
           font-weight: 600;
         }
+
         .title-video {
           span {
             color: #fff;
@@ -213,6 +323,7 @@ body {
             font-size: 14px;
           }
         }
+
         .list-group-item {
           background-color: #151515;
           border: 1.2px solid #080808;
@@ -222,45 +333,56 @@ body {
   }
 }
 
-#noticias-meio, #noticias-inferior {
+#noticias-meio,
+#noticias-inferior {
   .container {
+
     #etiquetando,
     #encontro,
     #cidade {
       margin-top: 50px;
+
       .title {
         font-size: 22px;
         font-weight: 600;
         color: #151515;
       }
-      a{
+
+      a {
         text-decoration: none;
       }
+
       .principal {
         margin-top: 15px;
+
         .title-noticia {
           font-size: 18px;
           color: #222222;
           line-height: 28px;
           font-weight: 600;
         }
+
         p {
           margin: 10px 0 10px;
           font-size: $description;
         }
+
         img {
           width: 100%;
           height: 225px;
           margin-bottom: 10px;
         }
       }
+
       .menores {
         margin-top: 25px;
+
         span {
           font-size: $description;
           line-height: 20px;
           font-weight: 600;
         }
+
         img {
           // width: 100%;
           height: 80px;
@@ -270,16 +392,19 @@ body {
   }
 }
 
-#carousel-colunistas{
+#carousel-colunistas {
   background-color: #F1F1F1;
-  .container{
+
+  .container {
+
     // padding: 0px;
-    .title{
+    .title {
       font-size: $title-section;
       font-weight: 600;
       margin: 25px 0 25px 0;
-    }      
-    a{
+    }
+
+    a {
       color: #333 !important;
 
       .circle {
@@ -290,6 +415,7 @@ body {
         overflow: hidden;
         position: relative;
         float: left;
+
         img {
           position: absolute;
           // bottom: 0;
@@ -298,25 +424,31 @@ body {
           // padding: 0 10px 0 10px;
         }
       }
+
       .info {
         margin: 15px 0 0 15px;
         float: left;
         max-width: 55%;
-        .title{
+
+        .title {
           padding-left: 15px;
           font-size: 16px;
         }
-        .description{
+
+        .description {
           margin: 10px 0 0 15px;
           font-size: 14px;
           // font-weight: 600;
         }
       }
     }
-    .owl-nav{
+
+    .owl-nav {
       margin: 25px 0 25px 0 !important;
-      .owl-prev, .owl-next{
-        background-color: rgba(0,0,0,0);
+
+      .owl-prev,
+      .owl-next {
+        background-color: rgba(0, 0, 0, 0);
         border: solid 0.5px #151515;
         color: #151515;
       }
@@ -327,32 +459,39 @@ body {
 #eventos {
   margin-top: 25px;
   background-color: #151515;
-  .container{
+
+  .container {
     padding-top: 50px;
+
     .eventos {
       padding-bottom: 50px;
-      .item{
+
+      .item {
         display: block;
         height: 500px;
         overflow: hidden;
+
         img {
           width: 100%;
           min-height: 500px;
         }
-        .box{
+
+        .box {
           width: 25%;
           position: absolute;
           top: 15px;
           right: 15px;
           padding: 15px;
           background-color: #ccc;
-          .head{
-            h4{
+
+          .head {
+            h4 {
               font-weight: 700;
             }
           }
         }
       }
+
       .veja-mais {
         position: absolute;
         bottom: 15px;
@@ -367,4 +506,3 @@ body {
     }
   }
 }
-
