@@ -1,4 +1,5 @@
-<?php get_header(); 
+<?php 
+      get_header(); 
       include "query.php";
 ?>
 <?php
@@ -7,6 +8,7 @@ if (have_posts() ){
 
   $post = get_post();
   $category = get_the_category();
+  $category_parent = get_category_parents($category[0]->category_parent);
 
   // Adicionando Banner em todas as single page se estiver ativo.
   foreach ($banners as $banner){
@@ -34,7 +36,7 @@ if (have_posts() ){
     }
   }
 
-  if(($category[0]->slug == 'noticias') or ($category[1]->slug == 'noticias')){
+  if(($category[0]->slug == 'noticias') or ($category_parent == 'Noticias/')){
     include "single/noticia.php";
   }
 
