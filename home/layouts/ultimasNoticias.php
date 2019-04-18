@@ -36,6 +36,7 @@
           $id = $noticia->ID;
           $ultimas_noticias = get_field('ultimas_noticias', $id);
           $descricao = get_field('descricao', $id);
+          $chamada_sem_foto = get_field('chamada_sem_foto', $id);
           $category = get_the_category($id)[0]->name;
           $thumbnail = get_thumbnail($id);
 
