@@ -111,7 +111,7 @@ if (is_single() ){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/grupo-etiqueta/quem-somos"><img src="<?php template_directory() ?>/assets/images/layout/logo-midia.png"></a>
+      <a class="navbar-brand" href="/quem-somos"><img src="<?php template_directory() ?>/assets/images/layout/logo-midia.png"></a>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
