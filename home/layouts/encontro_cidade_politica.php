@@ -13,7 +13,7 @@
       $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria->slug == 'encontro'){
+        if($category->slug == 'encontro'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
@@ -56,7 +56,7 @@
       $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria->slug == 'cidade'){
+        if($category->slug == 'cidade'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
@@ -99,7 +99,7 @@
       $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria->slug == 'politica'){
+        if($category->slug == 'politica'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
