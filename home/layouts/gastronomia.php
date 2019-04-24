@@ -1,6 +1,6 @@
 <section id="gastronomia">
   <div class="container m-top-2x">
-    <a class="title-section" href="/guias/gastronomias/"><h3>GASTRONOMIA</h3></a>
+    <a class="title-section" href="/guia-gastronomias/"><h3>GASTRONOMIA</h3></a>
     <div class="destaque owl-carousel owl-theme m-top">
 <?php
     foreach($gastronomias as $gastronomia){
@@ -30,7 +30,7 @@
     }
 ?>
     </div>
-    <a class="btn btn-mais" href="/guias/gastronomias">Saber mais</a>
+    <a class="btn btn-mais" href="/guia-gastronomias">Saber mais</a>
   </div> <!-- CONTAINER --> 
 </section>
 

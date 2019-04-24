@@ -279,7 +279,7 @@ if (is_single() ){
           <li class="m-right-2x"><a href="/encontro">ENTREVISTAS</a></li>
           <li class="m-right-2x"><a href="/social">SOCIAL</a></li>
           <li class="m-right-2x"><a href="/tv-etiqueta">TV ETIQUETA</a></li>
-          <li class="m-right-2x"><a href="/guias/gastronomia">GASTRONOMIA</a></li>
+          <li class="m-right-2x"><a href="/guia-gastronomias">GASTRONOMIA</a></li>
 
           <li class="dropdown m-right-2x">
             <a href="javascript:()" class="cursor-default">GUIAS <span class="caret"></span></a>

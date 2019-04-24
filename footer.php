@@ -36,7 +36,7 @@
         <!-- <a href="/guias/classificados"><p>Classificados</p></a>
         <a href="/guias/empregos"><p>Empregos</p></a>
         <a href="/guias/eventos"><p>Guia Eventos</p></a> -->
-        <a href="/guia/gastronomia"><p>Guia Gastronômico</p></a>
+        <a href="/guia-gastronomias"><p>Guia Gastronômico</p></a>
       </div>
     </div>
 
