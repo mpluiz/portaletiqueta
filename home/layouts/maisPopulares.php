@@ -15,7 +15,7 @@
                 <div class="item"> 
                   <a class="post" href='.get_permalink($id).'>
                     <img src='.$thumbnail.'>
-                    <p class="cat-noticia">'.get_field('categorias', $noticia->ID).'</p>           
+                    <p class="cat-noticia">'.$category->name.'</p>           
                   </a>
                   <a class="title-post" href='.get_permalink($id).'>
                     <h4>'.$noticia->post_title.'</h4>
