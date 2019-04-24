@@ -59,8 +59,8 @@ echo '<section id="single-eventos">
 echo       '</br>
             <i class="far fa-clock"></i><span>'.' '.get_the_date('j F, Y g:i a', $post->ID).'</span>
           </div>';
-include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
-include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
+// include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
+// include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
 echo    '</div>
       </section>';
 ?>

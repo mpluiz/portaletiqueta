@@ -31,8 +31,8 @@ echo '<section id="single-promocao">
             <p><strong>Inicio: </strong>'.$inicio.'</p>
             <p><strong>Término: </strong>'.$termino.'</p>
           </div>';
-include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
-include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
+// include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
+// include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
 echo    '</div>
       </section>';
 ?>
