@@ -284,7 +284,6 @@ if (is_single() ){
           <li class="dropdown m-right-2x">
             <a href="javascript:()" class="cursor-default">GUIAS <span class="caret"></span></a>
             <ul class="dropdown-menu guias">
-              <li class="disabled"><a>GASTRONOMIA</a></li>
               <li class="disabled"><a>EVENTOS</a></li>
               <li class="disabled"><a>CLASSIFICADOS</a></li>
             </ul>
