@@ -10,10 +10,10 @@
         break;
       }
       $id = $noticia->ID;
-      $categoria = get_field('categorias', $id);
+      $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria == 'ENCONTRO'){
+        if($categoria->slug == 'encontro'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
@@ -53,10 +53,10 @@
         break;
       }
       $id = $noticia->ID;
-      $categoria = get_field('categorias', $id);
+      $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria == 'CIDADE'){
+        if($categoria->slug == 'cidade'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
@@ -96,10 +96,10 @@
         break;
       }
       $id = $noticia->ID;
-      $categoria = get_field('categorias', $id);
+      $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria == 'POLÍTICA'){
+        if($categoria->slug == 'politica'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
