@@ -134,8 +134,8 @@
                         </div>
                       ';
               } else {
-                echo '<div class="col-md-12 ml-2">
-                          <img src=' . get_field('imagem', $publicidade->ID, true) . '>
+                echo '<div class="col-md-12">
+                          <img class="ml-2" src=' . get_field('imagem', $publicidade->ID, true) . '>
                         </div>
                       ';
               }

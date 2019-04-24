@@ -2,7 +2,7 @@
   <div class="container">
     
   <div class="col-md-4 encontro">
-    <a class="title-section" href="/noticias/encontro/"><h3>ENCONTRO</h3></a>
+    <a class="title-section" href="/encontro"><h3>ENCONTRO</h3></a>
     <?php 
     $count = 0;
     foreach($noticias as $noticia){
@@ -42,10 +42,11 @@
       }
     }
     ?>
+    <a class="btn btn-mais" href="/encontro">Saber mais</a>
   </div> <!-- /.col-4 -->
   
   <div class="col-md-4 cidade">
-    <a class="title-section" href="/noticias/cidade/"><h3>CIDADE</h3></a>
+    <a class="title-section" href="/cidade"><h3>CIDADE</h3></a>
     <?php 
     $count = 0;
     foreach($noticias as $noticia){
@@ -85,10 +86,11 @@
       }
     }
     ?>
+    <a class="btn btn-mais" href="/cidade">Saber mais</a>
   </div> <!-- /.col-4 -->
 
   <div class="col-md-4 politica">
-    <a class="title-section" href="/noticias/politica/"><h3>POLÍTICA</h3></a>
+    <a class="title-section" href="/politica"><h3>POLÍTICA</h3></a>
     <?php 
     $count = 0;
     foreach($noticias as $noticia){
@@ -128,6 +130,7 @@
       }
     }
     ?>
+    <a class="btn btn-mais" href="/politica">Saber mais</a>
   </div> <!-- /.col-4 -->
 
   </div> <!-- /.container -->

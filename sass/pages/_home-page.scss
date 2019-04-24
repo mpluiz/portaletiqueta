@@ -435,6 +435,15 @@ body {
           height: 80px;
         }
       }
+
+      .btn-mais {
+        float: right;
+        border: none;
+        border-radius: 0;
+        background-color: coral;
+        color: #fff;
+        font-weight: bold;
+      }
     }
   }
 }
