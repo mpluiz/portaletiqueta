@@ -2,17 +2,17 @@
   <div class="container">
     
     <div class="col-md-8">  
-      <a class="title-section" href="/noticias/social"><h3>SOCIAL</h3></a>
+      <a class="title-section" href="/social"><h3>SOCIAL</h3></a>
       <div class="social owl-carousel owl-theme">
       <?php
         foreach($noticias as $noticia){
           $id = $noticia->ID;
           $social = get_field('social', $id);
-          $category = get_field('categorias', $id);
+          $category = get_the_category($id)[0];
           $thumbnail = get_thumbnail($id);
           if($thumbnail != ''){
             if($social == true){
-              if($category == 'SOCIAL'){
+              if($category->slug == 'social'){
                 echo '
                   <div class="item"> 
                     <a class="post" href='.get_permalink($id).'>
