@@ -117,10 +117,10 @@ if (is_single() ){
     <div id="navbar" class="navbar-collapse collapse">
 
       <ul class="nav navbar-nav">
-        <li><a href="/revista"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/revista-xs.png"></a></li>
-        <li><a href="#"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/portal-xs.png"></a></li>
+        <li><a href="/revista-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/revista-xs.png"></a></li>
+        <li><a href="/portal-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/portal-xs.png"></a></li>
         <li><a href="/tv-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/tv-xs.png"></a></li>
-        <li><a href="/eventos"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/eventos-xs.png"></a></li>
+        <li><a href="/etiqueta-eventos"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/eventos-xs.png"></a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
