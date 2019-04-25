@@ -41,7 +41,7 @@
     </div>
 
     <div class="col-md-2 produtos">
-      <p class="title">PRODUTOS</p>
+      <p class="title">SOLUÇÕES</p>
       <div class="col-md-12 no-padding">
         <a href="#"><p>Etiqueta Eventos</p></a>
         <a href="/eventos"><p>Portal Etiqueta</p></a>
