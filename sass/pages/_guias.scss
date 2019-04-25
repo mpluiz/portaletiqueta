@@ -20,9 +20,10 @@
           height: auto;
         }
         .box{
-          height: 125px;
+          height: 150px;
           border: 0.5px solid #ccc;
           padding: 10px;
+          box-shadow: #ccc 0px 0px 20px;
           .title-post {
             font-size: 18px;
             color: #222222;
