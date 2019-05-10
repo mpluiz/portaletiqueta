@@ -18,6 +18,10 @@ echo '<section id="single-eventos">
               <span class="hidden-md hidden-lg hidden-sm whatsapp"><i class="fab fa-whatsapp"></i></span>
             </div>';
 
+            if (get_field('jornalista', $post->ID) != ''){
+              echo '<p><strong>Jornalista:</strong> '.get_field('jornalista', $post->ID).'</p>';
+            }
+
             if (get_field('fotografo', $post->ID) != ''){
               echo '<p><strong>Fotógrafo:</strong> '.get_field('fotografo', $post->ID).'</p>';
             } 
