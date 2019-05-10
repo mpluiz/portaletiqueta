@@ -48,7 +48,7 @@ if (have_posts() ){
     include "single/evento.php";
   }
 
-  if($category[0]->slug == 'gastronomia'){
+  if($category[0]->slug == 'gastronomias'){
     include "single/gastronomia.php";
   }
 
