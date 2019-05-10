@@ -30,7 +30,7 @@
     }
 ?>
     </div>
-    <a class="btn btn-mais" href="/guia-gastronomias">Saber mais</a>
+    <a class="btn btn-mais" href="/guia-gastronomias">Veja +</a>
   </div> <!-- CONTAINER --> 
 </section>
 
