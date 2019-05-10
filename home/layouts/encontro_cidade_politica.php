@@ -42,7 +42,7 @@
       }
     }
     ?>
-    <a class="btn btn-mais" href="/encontro">Saber mais</a>
+    <a class="btn btn-mais" href="/encontro">Veja +</a>
   </div> <!-- /.col-4 -->
   
   <div class="col-md-4 cidade">
@@ -86,7 +86,7 @@
       }
     }
     ?>
-    <a class="btn btn-mais" href="/cidade">Saber mais</a>
+    <a class="btn btn-mais" href="/cidade">Veja +</a>
   </div> <!-- /.col-4 -->
 
   <div class="col-md-4 politica">
@@ -130,7 +130,7 @@
       }
     }
     ?>
-    <a class="btn btn-mais" href="/politica">Saber mais</a>
+    <a class="btn btn-mais" href="/politica">Veja +</a>
   </div> <!-- /.col-4 -->
 
   </div> <!-- /.container -->
