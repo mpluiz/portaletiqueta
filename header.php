@@ -4,6 +4,7 @@
   <meta charset="utf-8">                                                                                                                                                                                           
   <meta http-equiv="X-UA-Compatible" content="IE=edge">                                                                                                                                                            
   <meta name="viewport" content="width=device-width, initial-scale=1">                                                                                                                                             
+  <meta name="Description" content="Portal Etiqueta - Nóticias de Franca e região">
 
   <!-- CSS FILES -->                                                                                                                                                                                              
     <link rel="stylesheet" type="text/css" href="<?php template_directory(); ?>/assets/css/style.css">                                                                                                          
