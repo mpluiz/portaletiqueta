@@ -3,13 +3,13 @@
   <div class="container">
 
     <div class="col-md-3 logo rede-social">
-      <a href="/"><img src="<?php template_directory() ?>/assets/images/layout/logo.png"></a>
       <div class="row">
         <a href="https://www.facebook.com/RevistaEtiquetaOficial" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/revistaetiqueta/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://twitter.com/etiquetaoficial" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://www.youtube.com/channel/UCq1ApjWeG5GANkeazymACFQ" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
+      <a href="/"><img src="<?php template_directory() ?>/assets/images/layout/logo.png"></a>
     </div>
 
     <div class="col-md-3 noticias">
@@ -33,15 +33,12 @@
     <div class="col-md-2 canais">
       <p class="title">CANAIS</p>
       <div class="col-md-12 no-padding">
-        <!-- <a href="/guias/classificados"><p>Classificados</p></a>
-        <a href="/guias/empregos"><p>Empregos</p></a>
-        <a href="/guias/eventos"><p>Guia Eventos</p></a> -->
-        <a href="/guia/gastronomia"><p>Guia Gastronômico</p></a>
+        <a href="/guia-gastronomias"><p>Guia Gastronômico</p></a>
       </div>
     </div>
 
     <div class="col-md-2 produtos">
-      <p class="title">PRODUTOS</p>
+      <p class="title">SOLUÇÕES</p>
       <div class="col-md-12 no-padding">
         <a href="#"><p>Etiqueta Eventos</p></a>
         <a href="/eventos"><p>Portal Etiqueta</p></a>

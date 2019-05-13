@@ -30,6 +30,10 @@
   height: 25px;
 }
 
+.ml-2 {
+  margin-left: -15px;
+}
+
 .title-section{
   text-decoration: none !important;
   h3{
@@ -94,6 +98,16 @@
   background-color: $azul-escuro;
   color: #fff;
   width: 100%;
+}
+
+.btn-mais {
+
+  float: right;
+  border: none;
+  border-radius: 0;
+  background-color: coral;
+  color: #fff;
+  font-weight: bold;
 }
 
 .btn-ver-mais:hover,.btn-ver-mais:active, .btn-ver-mais:target{

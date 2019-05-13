@@ -6,6 +6,7 @@
           foreach($noticias as $noticia){
             $id = $noticia->ID;
             $destaque = get_field('destaque', $noticia->ID, true);
+            $category = get_the_category($id)[0];
             if ($destaque == true){
               $thumbnail = get_thumbnail($noticia->ID);
               if ($thumbnail != ''){
@@ -13,7 +14,7 @@
                 <div class="item"> 
                   <a class="post" href='.get_permalink($id).'>
                     <img src='.$thumbnail.'>
-                    <p class="cat-noticia">'.get_field('categorias', $id).'</p>           
+                    <p class="cat-noticia">'.$category->name.'</p>           
                   </a>
                   <a class="title-post" href='.get_permalink($id).'>
                     <h4>'.$noticia->post_title.'</h4>

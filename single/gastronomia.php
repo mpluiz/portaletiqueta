@@ -29,7 +29,7 @@ echo '<section id="single-eventos">
             <p><strong>Preço: </strong>'.get_field('preco', $post->ID).'</p>
             <p><strong>Contato: </strong>'.get_field('telefone', $post->ID).'</p>
             <p><strong>Horário de Funcionamento: </strong>'.get_field('horario_de_funcionamento', $post->ID).'</p>
-            <p><strong>Local: </strong><a href='.get_field('link_local', $post->ID).' style="text-decoration: none">'.get_field('local', $post->ID).'</a></p>';
+            <p><strong>Local: </strong><a href='.get_field('link_local', $post->ID).' target="_blank" style="text-decoration: none">'.get_field('local', $post->ID).'</a></p>';
   
             // 
             if (get_field('estacionamento', $post->ID) == 'sim'){
@@ -59,8 +59,8 @@ echo '<section id="single-eventos">
 echo       '</br>
             <i class="far fa-clock"></i><span>'.' '.get_the_date('j F, Y g:i a', $post->ID).'</span>
           </div>';
-include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
-include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
+// include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
+// include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
 echo    '</div>
       </section>';
 ?>

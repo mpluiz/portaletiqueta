@@ -27,12 +27,12 @@ echo '<section id="single-promocao">
             '.$content.'
 
             </br>
-            <p>Para participar acesse o link e siga os regulamentos: <a class="link" target="_blank" href='.get_field('link_instagram', $post->ID).'>Instagram</a></p>
+            <p>Para participar acesse o link e siga os regulamentos: <a class="link" target="_blank" href='.get_field('link_instagram', $post->ID).'>Link</a></p>
             <p><strong>Inicio: </strong>'.$inicio.'</p>
             <p><strong>Término: </strong>'.$termino.'</p>
           </div>';
-include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
-include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
+// include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
+// include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
 echo    '</div>
       </section>';
 ?>

@@ -18,6 +18,10 @@ echo '<section id="single-eventos">
               <span class="hidden-md hidden-lg hidden-sm whatsapp"><i class="fab fa-whatsapp"></i></span>
             </div>';
 
+            if (get_field('jornalista', $post->ID) != ''){
+              echo '<p><strong>Jornalista:</strong> '.get_field('jornalista', $post->ID).'</p>';
+            }
+
             if (get_field('fotografo', $post->ID) != ''){
               echo '<p><strong>Fotógrafo:</strong> '.get_field('fotografo', $post->ID).'</p>';
             } 
@@ -32,8 +36,8 @@ echo '<section id="single-eventos">
             </br>
             <i class="far fa-clock"></i><span>'.' '.get_the_date('j F, Y g:i a', $post->ID).'</span>
           </div>';
-include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
-include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
+// include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
+// include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
 echo    '</div>
       </section>';
 ?>

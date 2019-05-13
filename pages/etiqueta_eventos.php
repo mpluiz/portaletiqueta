@@ -1,20 +1,20 @@
 <?php
 
 /*
-  template name: Quem Somos
+  template name: Etiqueta Eventos
 */
 
 get_header(); 
 
-// Pegando Conteudo da pagina e aplicando filtro ao content
 $post = get_page(get_the_ID());
 $content = apply_filters('the_content', $post->post_content);
 ?>
 
-<section id="quem_somos">
+<section id="etiqueta_eventos">
   <div class="container">
-    <a class="title-section"><h3>QUEM SOMOS</h3></a>
-      <?php echo $content; ?>
+    <div class="title-section"><h3>ETIQUETA EVENTOS</h3></div>
+    <div class="clear-fix"></div>
+    <?php echo $content; ?>
   </div>
 </section>
 

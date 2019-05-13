@@ -2,7 +2,7 @@
   <div class="container">
     
     <div class="col-md-8">  
-      <a class="title-section" href="/noticias/mais-populares/"><h3>MAIS POPULARES</h3></a>
+      <a class="title-section" href="/mais-populares/"><h3>MAIS POPULARES</h3></a>
       <div class="mais_populares owl-carousel owl-theme">
       <?php
         foreach($noticias as $noticia){
@@ -15,7 +15,7 @@
                 <div class="item"> 
                   <a class="post" href='.get_permalink($id).'>
                     <img src='.$thumbnail.'>
-                    <p class="cat-noticia">'.get_field('categorias', $noticia->ID).'</p>           
+                    <p class="cat-noticia">'.$category->name.'</p>           
                   </a>
                   <a class="title-post" href='.get_permalink($id).'>
                     <h4>'.$noticia->post_title.'</h4>

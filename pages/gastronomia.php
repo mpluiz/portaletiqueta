@@ -1,7 +1,7 @@
 <?php
 
 /*
-  template name: Gastronomia
+  template name: Gastronomias
 */
 
 include(dirname(dirname( __FILE__  )).'/query.php');

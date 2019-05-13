@@ -6,7 +6,7 @@
         foreach($users as $user){
           $user_meta = get_user_meta($user->ID);
           $link = get_author_posts_url($user->ID);
-          if($user->roles[0] != 'administrator'){
+          if($user->roles[0] != 'administrator' && $user->roles[0] != 'editor'){
             echo '<div class="item">';
 
               echo '<a href="'.$link.'">';

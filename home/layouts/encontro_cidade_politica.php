@@ -2,7 +2,7 @@
   <div class="container">
     
   <div class="col-md-4 encontro">
-    <a class="title-section" href="/noticias/encontro/"><h3>ENCONTRO</h3></a>
+    <a class="title-section" href="/encontro"><h3>ENCONTRO</h3></a>
     <?php 
     $count = 0;
     foreach($noticias as $noticia){
@@ -10,10 +10,10 @@
         break;
       }
       $id = $noticia->ID;
-      $categoria = get_field('categorias', $id);
+      $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria == 'ENCONTRO'){
+        if($category->slug == 'encontro'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
@@ -42,10 +42,11 @@
       }
     }
     ?>
+    <a class="btn btn-mais" href="/encontro">Veja +</a>
   </div> <!-- /.col-4 -->
   
   <div class="col-md-4 cidade">
-    <a class="title-section" href="/noticias/cidade/"><h3>CIDADE</h3></a>
+    <a class="title-section" href="/cidade"><h3>CIDADE</h3></a>
     <?php 
     $count = 0;
     foreach($noticias as $noticia){
@@ -53,10 +54,10 @@
         break;
       }
       $id = $noticia->ID;
-      $categoria = get_field('categorias', $id);
+      $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria == 'CIDADE'){
+        if($category->slug == 'cidade'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
@@ -85,10 +86,11 @@
       }
     }
     ?>
+    <a class="btn btn-mais" href="/cidade">Veja +</a>
   </div> <!-- /.col-4 -->
 
   <div class="col-md-4 politica">
-    <a class="title-section" href="/noticias/politica/"><h3>POLÍTICA</h3></a>
+    <a class="title-section" href="/politica"><h3>POLÍTICA</h3></a>
     <?php 
     $count = 0;
     foreach($noticias as $noticia){
@@ -96,10 +98,10 @@
         break;
       }
       $id = $noticia->ID;
-      $categoria = get_field('categorias', $id);
+      $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($categoria == 'POLÍTICA'){
+        if($category->slug == 'politica'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
@@ -128,6 +130,7 @@
       }
     }
     ?>
+    <a class="btn btn-mais" href="/politica">Veja +</a>
   </div> <!-- /.col-4 -->
 
   </div> <!-- /.container -->

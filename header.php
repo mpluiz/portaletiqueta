@@ -4,6 +4,7 @@
   <meta charset="utf-8">                                                                                                                                                                                           
   <meta http-equiv="X-UA-Compatible" content="IE=edge">                                                                                                                                                            
   <meta name="viewport" content="width=device-width, initial-scale=1">                                                                                                                                             
+  <meta name="Description" content="Portal Etiqueta - Nóticias de Franca e região">
 
   <!-- CSS FILES -->                                                                                                                                                                                              
     <link rel="stylesheet" type="text/css" href="<?php template_directory(); ?>/assets/css/style.css">                                                                                                          
@@ -111,16 +112,16 @@ if (is_single() ){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/grupo-etiqueta/quem-somos"><img src="<?php template_directory() ?>/assets/images/layout/logo-midia.png"></a>
+      <a class="navbar-brand" href="/quem-somos"><img src="<?php template_directory() ?>/assets/images/layout/logo-midia.png"></a>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
 
       <ul class="nav navbar-nav">
-        <li><a href="/revista"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/revista-xs.png"></a></li>
-        <li><a href="#"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/portal-xs.png"></a></li>
+        <li><a href="/revista-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/revista-xs.png"></a></li>
+        <li><a href="/portal-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/portal-xs.png"></a></li>
         <li><a href="/tv-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/tv-xs.png"></a></li>
-        <li><a href="/eventos"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/eventos-xs.png"></a></li>
+        <li><a href="/etiqueta-eventos"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/eventos-xs.png"></a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -279,12 +280,11 @@ if (is_single() ){
           <li class="m-right-2x"><a href="/encontro">ENTREVISTAS</a></li>
           <li class="m-right-2x"><a href="/social">SOCIAL</a></li>
           <li class="m-right-2x"><a href="/tv-etiqueta">TV ETIQUETA</a></li>
-          <li class="m-right-2x"><a href="/guias/gastronomia">GASTRONOMIA</a></li>
+          <li class="m-right-2x"><a href="/guia-gastronomias">GASTRONOMIA</a></li>
 
           <li class="dropdown m-right-2x">
             <a href="javascript:()" class="cursor-default">GUIAS <span class="caret"></span></a>
             <ul class="dropdown-menu guias">
-              <li class="disabled"><a>GASTRONOMIA</a></li>
               <li class="disabled"><a>EVENTOS</a></li>
               <li class="disabled"><a>CLASSIFICADOS</a></li>
             </ul>

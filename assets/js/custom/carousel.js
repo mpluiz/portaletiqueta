@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.ultimas_noticias, .mais_populares, .social, .eventos, .radar, .banner').owlCarousel({                                                                                                              
+  $('.mais_populares, .social, .eventos, .radar, .banner').owlCarousel({                                                                                                              
     items:1,
     loop:true,
     margin:10,
