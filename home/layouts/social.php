@@ -41,6 +41,7 @@
           $category = get_the_category($id)[0];
           $thumbnail = get_thumbnail($id);
           if ($thumbnail != '') {
+            if ($social == true) {
               echo '
                         <div class="item"> 
                           <a class="post" href=' . get_permalink($id) . '>
@@ -53,8 +54,9 @@
                           </a>
                         </div>
                       ';
+              }
+            }
           }
-        }
         ?>
       </div>
       <a class="btn btn-mais" href="/social">Veja +</a>
