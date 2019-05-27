@@ -41,7 +41,6 @@
           $category = get_the_category($id)[0];
           $thumbnail = get_thumbnail($id);
           if ($thumbnail != '') {
-            if ($category->slug == 'social') {
               echo '
                         <div class="item"> 
                           <a class="post" href=' . get_permalink($id) . '>
@@ -54,7 +53,6 @@
                           </a>
                         </div>
                       ';
-            }
           }
         }
         ?>
