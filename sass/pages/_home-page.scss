@@ -119,6 +119,30 @@ body {
         }
       }
     }
+
+    .publicidade-inferior {
+      padding: 0px;
+
+      .title-publicidade {
+        padding: 0 15px 0 15px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .img-1 {
+        padding-left: 0px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .img-2 {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 
@@ -202,6 +226,17 @@ body {
 
       img {
         width: 100%;
+        height: auto;
+      }
+
+      .img-1 {
+        padding-left: 0px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .img-2 {
+        max-width: 100%;
         height: auto;
       }
     }
