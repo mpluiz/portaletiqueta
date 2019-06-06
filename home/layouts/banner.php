@@ -11,9 +11,15 @@
           $id = $banner->ID;
           $thumbnail = get_thumbnail($id);
           if ($thumbnail != ''){
-            echo '<a class="post '.(get_field('extender', $id)) ? 'extend' : ''.'" href='.get_field('link', $id).' target="_blank">
-                    <img src='.$thumbnail.'>
-                 </a>';
+            if (get_field('extender', $id)) {
+              echo '<a class="post extend" href='.get_field('link', $id).' target="_blank">
+                      <img src='.$thumbnail.'>
+                  </a>';
+            } else {
+              echo '<a class="post" href='.get_field('link', $id).' target="_blank">
+                      <img src='.$thumbnail.'>
+                  </a>';
+            }
           }
         }
       }
