@@ -4,14 +4,14 @@ body {
 
 #banner {
   .container {
-    .banner {
+    .extend {
       height: 125px;
       overflow: hidden;
 
-      // &:hover {
-      //   height: auto;
-      //   overflow: auto;
-      // }
+      &:hover {
+        height: auto;
+        overflow: visible;
+      }
     }
 
     img {
