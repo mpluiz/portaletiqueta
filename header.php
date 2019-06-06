@@ -295,7 +295,7 @@ if (is_single() ){
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li class="anuncie"><a href="/grupo-etiqueta/servicos/anuncie">ANUNCIE</a></li>
+          <li class="anuncie"><a href="/anuncie">ANUNCIE</a></li>
         </ul>
 
       </div> <!-- .nav-collapse -->
