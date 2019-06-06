@@ -21,3 +21,11 @@
     </div>
   </div>
 </section>
+
+<script>
+  $(function() {
+    $('.banner').hover(function() {
+      $(this).toggleClass('open');
+    })
+  });
+</script>
