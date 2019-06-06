@@ -18,11 +18,12 @@ echo '<section id="single-noticias">
               <span class="hidden-md hidden-lg hidden-sm whatsapp"><i class="fab fa-whatsapp"></i></span>
             </div>';
 
+
             if (get_field('jornalista', $post->ID) != ''){
-              echo '<p><strong>Jornalista:</strong> '.get_field('jornalista', $post->ID).'</p>';
+              echo '<label class="jornalista"><i class="fas fa-user"></i> '.get_field('jornalista', $post->ID).'</label>';
             }
             if (get_field('fotografo', $post->ID) != ''){
-              echo '<p><strong>Fotógrafo:</strong> '.get_field('fotografo', $post->ID).'</p>';
+              echo '<label class="fotografo"><i class="fas fa-camera"></i> '.get_field('fotografo', $post->ID).'</label>';
             } 
 
             echo $content;

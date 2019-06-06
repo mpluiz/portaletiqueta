@@ -19,7 +19,7 @@ echo '<section id="single-eventos">
             </div>';
 
             if (get_field('fotografo', $post->ID) != ''){
-              echo '<p><strong>Fotógrafo:</strong> '.get_field('fotografo', $post->ID).'</p>';
+              echo '<label class="fotografo"><i class="fas fa-camera"></i> '.get_field('fotografo', $post->ID).'</label>';
             } 
 
             echo $content ;
