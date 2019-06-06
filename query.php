@@ -25,7 +25,7 @@
   $query = array('category_name' => 'parceiros', 'orderby' => 'rand', 'order' => 'DESC', 'posts_per_page' => '-1'); 
   $parceiros = get_posts($query);
 
-  $query = array('category_name' => 'promocoes', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
+  $query = array('category_name' => 'promocao', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
   $promocoes = get_posts($query);
 
   $query = array('category_name' => 'radares', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
