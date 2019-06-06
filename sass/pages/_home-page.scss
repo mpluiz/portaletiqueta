@@ -4,6 +4,16 @@ body {
 
 #banner {
   .container {
+    .banner {
+      height: 125px;
+      overflow: hidden;
+
+      &:hover {
+        height: auto;
+        overflow: auto;
+      }
+    }
+
     img {
       margin-top: 10px;
       width: 100%;
@@ -300,6 +310,7 @@ body {
           }
         }
       }
+
       .btn-mais {
 
         float: right;
