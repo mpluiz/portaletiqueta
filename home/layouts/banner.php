@@ -1,6 +1,6 @@
 <section id="banner">
   <div class="container">
-    <div class="banner owl-carousel owl-theme">
+    <div class="banner">
     <?php 
       foreach ($banners as $banner){
 
