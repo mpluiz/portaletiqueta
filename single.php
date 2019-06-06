@@ -19,7 +19,7 @@ if (have_posts() ){
       $date = get_field('ativo_ate', $id);
       $today = date('Ymd');
       
-      if ($today <= $date){
+      if ($today >= $date){
       $thumbnail = get_thumbnail($id);
         if ($thumbnail != ''){
           echo'<section id="banner">
