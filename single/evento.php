@@ -16,6 +16,7 @@ echo '<section id="single-eventos">
               <span class="twitter"><i class="fab fa-twitter"></i></span>
               <span class="linkedin"><i class="fab fa-linkedin-in"></i></span>
               <span class="hidden-md hidden-lg hidden-sm whatsapp"><i class="fab fa-whatsapp"></i></span>
+              <span class="hidden-sm hidden-xs whatsapp" id="web"><i class="fab fa-whatsapp"></i></span>
             </div>';
 
             if (get_field('jornalista', $post->ID) != ''){
@@ -24,6 +25,8 @@ echo '<section id="single-eventos">
             if (get_field('fotografo', $post->ID) != ''){
               echo '<label class="fotografo"><i class="fas fa-camera"></i> '.get_field('fotografo', $post->ID).'</label>';
             } 
+
+            echo '<label class="horario"><i class="far fa-clock"></i>'.get_the_date('j F, Y g:i a', $post->ID).'</label>';
 
             echo $content ;
 
@@ -53,6 +56,11 @@ $(function() {
 
   $('.linkedin').click(function() {
     window.open("https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink() ?>", "linkedin", "height=500,width=500");
+  });
+
+  $('#web').click(function() {
+    const link = '<?php the_permalink() ?>';
+    window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(link), "_blank");
   });
 
   $('.whatsapp').click(function() {
