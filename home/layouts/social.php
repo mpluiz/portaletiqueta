@@ -14,7 +14,7 @@
           $thumbnail = get_thumbnail($id);
           if ($thumbnail != '') {
             if ($social == true) {
-                echo '
+              echo '
                   <div class="item"> 
                     <a class="post" href=' . get_permalink($id) . '>
                       <img src=' . $thumbnail . '>
@@ -41,22 +41,24 @@
           $category = get_the_category($id)[0];
           $thumbnail = get_thumbnail($id);
           if ($thumbnail != '') {
-            if ($social == true) {
-              echo '
+            if ($category->slug == 'social') {
+              if ($social == false) {
+                echo '
                         <div class="item"> 
                           <a class="post" href=' . get_permalink($id) . '>
                             <img src=' . $thumbnail . '>
-                            <p class="cat-noticia">'.$category->name.'</p>           
+                            <p class="cat-noticia">' . $category->name . '</p>           
                           </a>
 
-                          <a class="title-post" href='.get_permalink($id).'>
-                            <h4>'.$noticia->post_title.'</h4>
+                          <a class="title-post" href=' . get_permalink($id) . '>
+                            <h4>' . $noticia->post_title . '</h4>
                           </a>
                         </div>
                       ';
               }
             }
           }
+        }
         ?>
       </div>
       <a class="btn btn-mais" href="/social">Veja +</a>

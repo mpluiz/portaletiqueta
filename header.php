@@ -112,25 +112,25 @@ if (is_single() ){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/quem-somos"><img src="<?php template_directory() ?>/assets/images/layout/logo-midia.png"></a>
+      <a class="navbar-brand" href="/quem-somos">Grupo Etiqueta</a>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
 
       <ul class="nav navbar-nav">
-        <li><a href="/revista-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/revista-xs.png"></a></li>
         <li><a href="/portal-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/portal-xs.png"></a></li>
-        <li><a href="/tv-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/tv-xs.png"></a></li>
         <li><a href="/etiqueta-eventos"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/eventos-xs.png"></a></li>
+        <li><a href="/tv-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/tv-xs.png"></a></li>
+        <li><a href="/revista-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/revista-xs.png"></a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
         <li><a class="menu" href="/grupo-etiqueta/servicos/parceiros/">Parceiros</a></li>
         <li><a class="menu" href="<?php template_directory() ?>/assets/pdf/midia_kit.pdf" target="_blank">Mídia KIT</a></li>
         <li><a class="menu" href="/contato">Fale Conosco</a></li>
-        <li><a class="menu" href="https://www.facebook.com/RevistaEtiquetaOficial" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-        <li><a class="menu" href="https://www.instagram.com/revistaetiqueta/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a class="menu" href="https://twitter.com/etiquetaoficial" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a class="menu" href="https://www.facebook.com/grupoetiquetaoficial/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a class="menu" href="https://www.instagram.com/grupoetiqueta/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a class="menu" href="https://twitter.com/grupoetiqueta" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
       </ul>
 
     </div> <!-- .nav-collapse -->
