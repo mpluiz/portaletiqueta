@@ -10,8 +10,8 @@ get_header();
 ?>
 <section id="parceiros">
   <div class="container">
-    <span class="title">Parceiros</span>
-    <div class="col-md-12 parceiros m-top-2x">
+    <a class="title-section"><h3>PARCEIROS</h3></a>
+    <div class="parceiros m-top-2x row">
     <?php
       foreach($parceiros as $parceiro){
       $thumb_id = get_post_thumbnail_id($parceiro->ID);
