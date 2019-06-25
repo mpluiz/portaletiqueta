@@ -188,37 +188,30 @@ if (is_single() ){
 ?>
     </div>
 
-    <div class="col-md-3 box-radar">
+  <div class="col-md-3 publicidade-menu" id="publicidade-menu">
+      <?php
+      $query = array('category_name' => 'publicidades', 'orderby' => 'date', 'order' => 'ASC', 'posts_per_page' => '-1'); 
+      $publicidades = get_posts($query);
 
-<?php  
-        include('query.php');
-        $count = 0;
-        foreach($radares as $radar){
-          $ativo = get_field('ativo', $radar->ID);
-          if ($ativo == true){
-            $count++;
-          }
-        }
-        if ($count > 0) :
-?>
+      foreach ($publicidades as $publicidade) {
+        $id = $publicidade->ID;
+        $date = get_field('ativo_ate', $id);
+        $ativo = get_field('ativo', $id, true);
+        $today = date('Ymd');
+        $posicao = get_field('posicao', $id);
 
-      <div class="radar owl-carousel owl-theme">
-<?php
-          foreach($radares as $radar){
-            $ativo = get_field('ativo', $radar->ID);
-            if ($ativo == true){
-              echo 
-                '<div class="item">
-                <p class="title-radar">Radar Móvel '.get_field('data', $radar->ID).'</p>
-                <p class="rua"><span>'.get_field('rua_km', $radar->ID).'</span></p>
-                </div>';
+        if ($today <= $date) {
+          if ($ativo == true) {
+            if ($posicao == 'menu') {
+              echo '<a href="'.get_field('link', $publicidade->ID).'" target="_blank">
+                      <img src=' . get_field('imagem', $publicidade->ID, true) . ' width="100%" height="55px">
+                    </a>';
             }
           }
-?>
-        </div>
-      </div>
-      <?php endif; ?>
-    </div>
+        }
+      }
+      ?>
+  </div>
 
   </div> <!-- .container -->
 </div> <!-- .central-menu -->

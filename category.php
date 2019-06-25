@@ -3,7 +3,7 @@
 <section id="category">
   <div class="container">
     <a class="title-section" href="#">
-      <h3><?php strtoupper(single_cat_title()); ?></h3>
+      <h3><?php single_cat_title(); ?></h3>
     </a>
     <div class="row">
       <?php

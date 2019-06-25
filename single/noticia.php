@@ -1,4 +1,7 @@
 <?php
+
+include(get_template_directory().'/includes/patrocinadores.php');
+
 // Aplicando os filtros no conteudo do post
 $content = apply_filters('the_content', $post->post_content);
 // Pegando imagem principal do post
@@ -33,8 +36,9 @@ echo '<section id="single-noticias">
 
             echo $content;
 
-          // include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
-          // include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
+
+            include(get_template_directory().'/includes/publicidade_interna.php');
+            include(get_template_directory().'/includes/gallery/gallery.php');
 
 echo'</div>
       </section>';

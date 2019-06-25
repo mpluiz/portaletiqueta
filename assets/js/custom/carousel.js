@@ -20,6 +20,14 @@ $(document).ready(function(){
     ]
   });
 
+  $('.patrocinadores').owlCarousel({
+    items:8,
+    margin:10,
+    responsiveClass:true,
+    dots: false,
+    nav: true
+  });
+
   $('.colunistas').owlCarousel({
     items:3,
     margin:10,

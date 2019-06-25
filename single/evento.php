@@ -1,8 +1,12 @@
 <?php
+
+include(get_template_directory().'/includes/patrocinadores.php');
+
 // Aplicando os filtros no conteudo do post
 $content = apply_filters('the_content', $post->post_content);
 // Pegando imagem principal do post
 $thumbnail = get_thumbnail($post->ID);
+
 
 echo '<section id="single-eventos"> 
         <div class="container">
@@ -26,7 +30,7 @@ echo '<section id="single-eventos">
               echo '<label class="fotografo"><i class="fas fa-camera"></i> '.get_field('fotografo', $post->ID).'</label>';
             } 
 
-            echo '<label class="horario"><i class="far fa-clock"></i>'.get_the_date('j F, Y g:i a', $post->ID).'</label>';
+            echo '<label class="horario"><i class="far fa-clock"></i> '.get_the_date('j F, Y g:i a', $post->ID).'</label>';
 
             echo $content ;
 
@@ -35,11 +39,11 @@ echo '<section id="single-eventos">
             <p><strong>Data: </strong>'.get_field('data', $post->ID).'  <i class="fas fa-calendar"></i></p>
             <p><strong>Local: </strong>'.get_field('local', $post->ID).'  <i class="fas fa-location-arrow"></i></p>
             <p><strong>Cidade: </strong>'.get_field('cidade', $post->ID).'  <i class="fas fa-map-marker"></i></p>
-            </br>
-            <i class="far fa-clock"></i><span>'.' '.get_the_date('j F, Y g:i a', $post->ID).'</span>
           </div>';
-// include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
-// include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
+
+          include(get_template_directory().'/includes/publicidade_interna.php');
+          include(get_template_directory().'/includes/gallery/gallery.php');
+
 echo    '</div>
       </section>';
 ?>
