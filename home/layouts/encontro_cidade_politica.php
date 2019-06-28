@@ -90,7 +90,7 @@
   </div> <!-- /.col-4 -->
 
   <div class="col-md-4 politica">
-    <a class="title-section" href="/politica"><h3>POLÍTICA</h3></a>
+    <a class="title-section" href="/brasil_e_mundo"><h3>BRASIL E MUNDO</h3></a>
     <?php 
     $count = 0;
     foreach($noticias as $noticia){
@@ -101,7 +101,7 @@
       $category = get_the_category($id)[0];
       $thumbnail = get_thumbnail($id);
       if($thumbnail != ''){
-        if($category->slug == 'politica'){
+        if($category->slug == 'brasil_e_mundo'){
           if($count == 0 ){
             echo '
               <div class="principal"> 
@@ -130,7 +130,7 @@
       }
     }
     ?>
-    <a class="btn btn-mais" href="/politica">Veja +</a>
+    <a class="btn btn-mais" href="/brasil_e_mundo">Veja +</a>
   </div> <!-- /.col-4 -->
 
   </div> <!-- /.container -->
