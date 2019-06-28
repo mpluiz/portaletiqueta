@@ -61,7 +61,7 @@
   <div class="about">
     <div class="container">
 
-      <div class="col-md-8 direitos row">
+      <div class="col-md-8 direitos">
         <?php if (is_author()): ?>
           <p>
             Todos os direitos reservados. Os artigos, opiniões e informações são de responsabilidade dos respectivos autores.
