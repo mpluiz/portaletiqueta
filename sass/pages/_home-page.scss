@@ -584,9 +584,17 @@ body {
           padding: 15px;
           background-color: #ccc;
 
-          .head {
-            h4 {
-              font-weight: 700;
+          a.content {
+            color: unset;
+
+            &:hover {
+              text-decoration: none;
+            }
+
+            .head {
+              h4 {
+                font-weight: 700;
+              }
             }
           }
         }
