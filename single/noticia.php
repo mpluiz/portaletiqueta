@@ -1,4 +1,7 @@
 <?php
+
+include(get_template_directory().'/includes/patrocinadores.php');
+
 // Aplicando os filtros no conteudo do post
 $content = apply_filters('the_content', $post->post_content);
 // Pegando imagem principal do post
@@ -16,23 +19,26 @@ echo '<section id="single-noticias">
               <span class="twitter"><i class="fab fa-twitter"></i></span>
               <span class="linkedin"><i class="fab fa-linkedin-in"></i></span>
               <span class="hidden-md hidden-lg hidden-sm whatsapp"><i class="fab fa-whatsapp"></i></span>
+              <span class="hidden-sm hidden-xs whatsapp" id="web"><i class="fab fa-whatsapp"></i></span>
             </div>';
 
+
             if (get_field('jornalista', $post->ID) != ''){
-              echo '<p><strong>Jornalista:</strong> '.get_field('jornalista', $post->ID).'</p>';
+              echo '<label class="jornalista"><i class="fas fa-user"></i> '.get_field('jornalista', $post->ID).'</label>';
             }
             if (get_field('fotografo', $post->ID) != ''){
-              echo '<p><strong>Fotógrafo:</strong> '.get_field('fotografo', $post->ID).'</p>';
+              echo '<label class="fotografo"><i class="fas fa-camera"></i> '.get_field('fotografo', $post->ID).'</label>';
             } 
+
+            echo '<label class="horario"><i class="far fa-clock"></i> '.get_the_date('j F, Y g:i a', $post->ID).'</label>';
+
+            echo '<div class="separador mt-2"></div>';
 
             echo $content;
 
-            echo'</br>
-                   <i class="far fa-clock"></i><span>'.' '.get_the_date('j F, Y g:i a', $post->ID).'</span>
-                 </div>';
 
-          // include (dirname(dirname( __FILE__  )).'/includes/publicidade_interna.php');
-          // include (dirname(dirname( __FILE__  )).'/includes/gallery/gallery.php');
+            include(get_template_directory().'/includes/publicidade_interna.php');
+            include(get_template_directory().'/includes/gallery/gallery.php');
 
 echo'</div>
       </section>';
@@ -52,8 +58,14 @@ $(function() {
     window.open("https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink() ?>", "linkedin", "height=500,width=500");
   });
 
+  $('#web').click(function() {
+    const link = '<?php the_permalink() ?>';
+    window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(link), "_blank");
+  });
+
   $('.whatsapp').click(function() {
     window.open("whatsapp://send?text=<?php the_permalink() ?>");
   });
+
 });
 </script>

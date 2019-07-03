@@ -24,12 +24,20 @@ if (have_posts() ){
         if ($thumbnail != ''){
           echo'<section id="banner">
                 <div class="container">
-                  <div class="banner owl-carousel owl-theme">
-                    <a class="post" href='.get_field('link', $id).' target="_blank">
+                  <div class="banner">';
+
+            if (get_field('extender', $id)) {
+              echo '<a class="post extend" href='.get_field('link', $id).' target="_blank">
                       <img src='.$thumbnail.'>
-                    </a>
-                  </div>
-                </div>
+                  </a>';
+            } else {
+              echo '<a class="post" href='.get_field('link', $id).' target="_blank">
+                      <img src='.$thumbnail.'>
+                  </a>';
+            }
+
+            echo' </div>
+                 </div>
               </section>';
         }
       }

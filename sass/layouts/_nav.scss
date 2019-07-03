@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Sansa Pro;
+  src: url('../vendor/fonts/SansaPro-Normal.otf');
+}
+
 nav.top-menu{
   font-family: $font-default;
   max-height: 50px !important;
@@ -5,9 +10,9 @@ nav.top-menu{
   border-radius: 0px !important;
   .navbar-header{
     .navbar-brand{
-      img{
-        margin-top: -10px;
-      }
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
     }
   }
 

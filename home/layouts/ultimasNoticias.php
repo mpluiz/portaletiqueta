@@ -127,15 +127,15 @@
             if ($posicao == 'ultimas_noticias_inferior') {
               if ($duplo != false) {
                 echo '<div class="col-md-6">
-                          <img src=' . get_field('imagem', $publicidade->ID, true) . '>
+                          <img class="img-1" src=' . get_field('imagem', $publicidade->ID, true) . '>
                         </div>
                         <div class="col-md-6">
-                          <img src=' . get_field('segunda_imagem', $publicidade->ID, true) . '>
+                          <img class="img-2" src=' . get_field('segunda_imagem', $publicidade->ID, true) . '>
                         </div>
                       ';
               } else {
                 echo '<div class="col-md-12">
-                          <img class="ml-2" src=' . get_field('imagem', $publicidade->ID, true) . '>
+                          <img src=' . get_field('imagem', $publicidade->ID, true) . '>
                         </div>
                       ';
               }

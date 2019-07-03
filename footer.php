@@ -4,9 +4,9 @@
 
     <div class="col-md-3 logo rede-social">
       <div class="row">
-        <a href="https://www.facebook.com/RevistaEtiquetaOficial" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/revistaetiqueta/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/etiquetaoficial" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/grupoetiquetaoficial" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/grupoetiqueta/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/grupoetiqueta" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://www.youtube.com/channel/UCq1ApjWeG5GANkeazymACFQ" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
       <a href="/"><img src="<?php template_directory() ?>/assets/images/layout/logo.png"></a>
@@ -16,15 +16,14 @@
       <p class="title">NOTÍCIAS</p>
       <div class="col-md-12 no-padding">
         <div class="col-md-6 no-padding">
-         <a href="/noticias/cidade"><p>Cidade</p></a>
+         <a href="/cidade"><p>Cidade</p></a>
          <a href="#"><p>Colunistas e blogs</p></a>
-         <a href="/noticias/encontro"><p>Encontro</p></a>
-         <a href="/noticias/esporte"><p>Esporte</p></a>
+         <a href="/encontro"><p>Encontro</p></a>
+         <a href="/esporte"><p>Esporte</p></a>
         </div>
         <div class="col-md-6">
-          <a href="/noticias/franca-e-regiao"><p>Franca e Região</p></a>
-          <a href="/noticias/politica"><p>Política</p></a>
-          <a href="/noticias/social"><p>Social</p></a>
+          <a href="/politica"><p>Política</p></a>
+          <a href="/social"><p>Social</p></a>
           <a href="/tv-etiqueta"><p>Videos</p></a>
         </div>
       </div>
@@ -40,19 +39,19 @@
     <div class="col-md-2 produtos">
       <p class="title">SOLUÇÕES</p>
       <div class="col-md-12 no-padding">
-        <a href="#"><p>Etiqueta Eventos</p></a>
-        <a href="/eventos"><p>Portal Etiqueta</p></a>
-        <a href="#"><p>Revista Etiqueta</p></a>
-        <a href="/"><p>TV ETIQUETA</p></a>
+        <a href="/portal-etiqueta"><p>Portal Etiqueta</p></a>
+        <a href="/etiqueta-eventos"><p>Etiqueta Eventos</p></a>
+        <a href="/tv-etiqueta"><p>TV Etiqueta</p></a>
+        <a href="/revista-etiqueta"><p>Revista Etiqueta</p></a>
       </div>
     </div>
 
     <div class="col-md-2 contato">
       <p class="title">CONTATO</p>
       <div class="col-md-12 no-padding">
-        <a href="#"><p>Fale Conosco</p></a>
-        <a href="#"><p>Institucional</p></a>
-        <a href="#"><p>Mídia Kit</p></a>
+        <a href="<?php template_directory() ?>/assets/pdf/midia_kit.pdf" target="_blank"><p>Mídia KIT</p></a>
+        <a href="/contato"><p>Fale Conosco</p></a>
+        <a href="/anuncie"><p>Anuncie</p></a>
       </div>
     </div>
 
@@ -62,7 +61,7 @@
   <div class="about">
     <div class="container">
 
-      <div class="col-md-8 direitos row">
+      <div class="col-md-8 direitos">
         <?php if (is_author()): ?>
           <p>
             Todos os direitos reservados. Os artigos, opiniões e informações são de responsabilidade dos respectivos autores.
