@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.mais_populares, .social, .eventos, .radar, .banner').owlCarousel({                                                                                                              
+  $('.mais_populares, .social, .eventos, .radar').owlCarousel({                                                                                                              
     items:1,
     loop:true,
     margin:10,
@@ -18,6 +18,14 @@ $(document).ready(function(){
       "<",
       ">"
     ]
+  });
+
+  $('.patrocinadores').owlCarousel({
+    items:8,
+    margin:10,
+    responsiveClass:true,
+    dots: false,
+    nav: true
   });
 
   $('.colunistas').owlCarousel({

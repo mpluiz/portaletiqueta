@@ -14,8 +14,7 @@
           $thumbnail = get_thumbnail($id);
           if ($thumbnail != '') {
             if ($social == true) {
-              if ($category->slug == 'social') {
-                echo '
+              echo '
                   <div class="item"> 
                     <a class="post" href=' . get_permalink($id) . '>
                       <img src=' . $thumbnail . '>
@@ -27,7 +26,6 @@
                     </a>
                   </div>
                 ';
-              }
             }
           }
         }
@@ -44,18 +42,20 @@
           $thumbnail = get_thumbnail($id);
           if ($thumbnail != '') {
             if ($category->slug == 'social') {
-              echo '
+              if ($social == false) {
+                echo '
                         <div class="item"> 
                           <a class="post" href=' . get_permalink($id) . '>
                             <img src=' . $thumbnail . '>
-                            <p class="cat-noticia">'.$category->name.'</p>           
+                            <p class="cat-noticia">' . $category->name . '</p>           
                           </a>
 
-                          <a class="title-post" href='.get_permalink($id).'>
-                            <h4>'.$noticia->post_title.'</h4>
+                          <a class="title-post" href=' . get_permalink($id) . '>
+                            <h4>' . $noticia->post_title . '</h4>
                           </a>
                         </div>
                       ';
+              }
             }
           }
         }

@@ -4,6 +4,17 @@ body {
 
 #banner {
   .container {
+    .extend {
+      height: 125px;
+      overflow: hidden;
+      display: block;
+
+      &:hover {
+        height: auto;
+        overflow: visible;
+      }
+    }
+
     img {
       margin-top: 10px;
       width: 100%;
@@ -119,6 +130,30 @@ body {
         }
       }
     }
+
+    .publicidade-inferior {
+      padding: 0px;
+
+      .title-publicidade {
+        padding: 0 15px 0 15px;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .img-1 {
+        padding-left: 0px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .img-2 {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 
@@ -204,6 +239,17 @@ body {
         width: 100%;
         height: auto;
       }
+
+      .img-1 {
+        padding-left: 0px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .img-2 {
+        max-width: 100%;
+        height: auto;
+      }
     }
   }
 }
@@ -265,6 +311,7 @@ body {
           }
         }
       }
+
       .btn-mais {
 
         float: right;
@@ -537,9 +584,17 @@ body {
           padding: 15px;
           background-color: #ccc;
 
-          .head {
-            h4 {
-              font-weight: 700;
+          a.content {
+            color: unset;
+
+            &:hover {
+              text-decoration: none;
+            }
+
+            .head {
+              h4 {
+                font-weight: 700;
+              }
             }
           }
         }

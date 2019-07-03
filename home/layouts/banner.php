@@ -1,6 +1,6 @@
-<section id="banner">
+<section class="hidden-xs" id="banner">
   <div class="container">
-    <div class="banner owl-carousel owl-theme">
+    <div class="banner">
     <?php 
       foreach ($banners as $banner){
 
@@ -11,9 +11,15 @@
           $id = $banner->ID;
           $thumbnail = get_thumbnail($id);
           if ($thumbnail != ''){
-            echo '<a class="post" href='.get_field('link', $id).' target="_blank">
-                    <img src='.$thumbnail.'>
-                 </a>';
+            if (get_field('extender', $id)) {
+              echo '<a class="post extend" href='.get_field('link', $id).' target="_blank">
+                      <img src='.$thumbnail.'>
+                  </a>';
+            } else {
+              echo '<a class="post" href='.get_field('link', $id).' target="_blank">
+                      <img src='.$thumbnail.'>
+                  </a>';
+            }
           }
         }
       }

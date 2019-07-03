@@ -9,7 +9,8 @@
       if ($thumbnail != ''){
         echo '<div class="item">
                 <img src='.$thumbnail.'>
-                  <div class="box">
+                <div class="box">
+                  <a class="content" href="'.get_permalink($evento->ID).'">
                     <div class="head">
                       <h4>'.$evento->post_title.'</h3>
                       <p class="post-description">'.get_field('descricao', $id).'</p>
@@ -19,7 +20,8 @@
                       <p><i class="fas fa-location-arrow"></i>'.' '.get_field('local', $evento->ID, true).'</p>
                       <p><i class="fas fa-map-marker"></i>'.' '.get_field('cidade', $evento->ID, true).'</p>
                     </div>
-                  </div>
+                  </a>
+                </div>
                 <a href="'.get_permalink($evento->ID).'" class="btn btn-default veja-mais">Veja +</a>
               </div>';
       }

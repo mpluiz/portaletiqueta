@@ -2,7 +2,9 @@
 
 // Pegando galeria de imagens do post relacionado
 $post_gallery = (get_field('galeria', $post->ID));
-$gallery = get_post_gallery_images($post_gallery[0]);
+
+if ($post_gallery):
+  $gallery = get_post_gallery_images($post_gallery[0]);
 
 ?>
 
@@ -18,7 +20,9 @@ $gallery = get_post_gallery_images($post_gallery[0]);
   ?>
 </div>
 
-<div class="col-md-12 m-top"><button class="btn col-md-6" id="loadmore">CARREGAR MAIS</button></div>
+<div class="col-md-12 m-top"><button class="btn col-md-6" id="loadmore" hidden>CARREGAR MAIS</button></div>
+
+<?php endif ?>
 
 <script>
 $(function () {                                                                                                                       
@@ -32,10 +36,12 @@ $(function () {
   });
 
   // CARREGAR MAIS
-  $(".thumb").slice(0, 16).show();                                                                                                                      
-  if ($('.thumb').length < 16){
-    $('#loadmore').hide();
+  $(".thumb").slice(0, 8).show();                                                                                                                      
+
+  if ($('.thumb').length > 8) {
+    $('#loadmore').attr('hidden', false);
   }
+
   $("#loadmore").on('click', function (e) {                                                                                                           
     e.preventDefault();                                                                                                                               
     $(".thumb:hidden").slice(0, 4).slideDown();                                                                                                        
