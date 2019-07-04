@@ -41,7 +41,7 @@
           $thumbnail = get_thumbnail($id);
 
           if ($thumbnail != false && $ultimas_noticias == true && $chamada_sem_foto == false) {
-            echo '<div class="col-md-6 noticia-dupla">
+            echo '<div class="col-md-6 col-xs-12 col-sm-12 noticia-dupla">
                     <div class="box-imagem">
                       <a href=' . get_permalink($id) . '>
                         <img src="' . $thumbnail . '">
