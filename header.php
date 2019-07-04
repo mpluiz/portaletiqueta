@@ -306,7 +306,6 @@ if (is_single() ){
 <div class="nav-mobile hidden-sm hidden-md hidden-lg">
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
@@ -315,47 +314,80 @@ if (is_single() ){
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="/">
-          Grupo Etiqueta
+          <img src="<?php template_directory() ?>/assets/images/layout/logo.png">
         </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Link</a></li>
+
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+            <a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Grupo Etiqueta <span class="caret"></span></a>
+            <ul class="dropdown-menu grupo-etiqueta">
+              <li><a href="/portal-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/portal-xs.png"><label>Portal Etiqueta</label></a></li>
+              <li><a href="/etiqueta-eventos"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/eventos-xs.png"><label>Etiqueta Eventos</label></a></li>
+              <li><a href="/tv-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/tv-xs.png"><label>TV Etiqueta</label></a></li>
+              <li><a href="/revista-etiqueta"><img class="logo-xs" src="<?php template_directory() ?>/assets/images/layout/revista-xs.png"><label>Revista Etiqueta</label></a></li>
             </ul>
           </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Notícias <span class="caret"></span></a>
+            <ul class="dropdown-menu grupo-etiqueta">
+      	      <li><a class="menu" href="/agronegocio">Agronegócio</a></li>
+              <li><a class="menu" href="/arquitetura-e-decoracao">Arquitetura e Decoração</a></li>
+              <li><a class="menu" href="/brasil">Brasil</a></li>
+              <li><a class="menu" href="/brasil_e_mundo">Brasil e Mundo</a></li>
+              <li><a class="menu" href="/cidade">Cidade</a></li>
+              <li><a class="menu" href="/classificados">Classificados</a></li>
+              <li><a class="menu" href="/clima">Clima</a></li>
+              <li><a class="menu" href="/comportamento">Comportamento</a></li>
+              <li><a class="menu" href="/cotidiano">Cotidiano</a></li>
+              <li><a class="menu" href="/cultura">Cultura</a></li>
+              <li><a class="menu" href="/economia">Economia</a></li>
+              <li><a class="menu" href="/empreendedorismo">Empreededorismo</a></li>
+              <li><a class="menu" href="/emprego">Emprego</a></li>
+              <li><a class="menu" href="/encontro">Encontro</a></li>
+              <li><a class="menu" href="/entretenimento">Entretenimento</a></li>
+              <li><a class="menu" href="/erramos">Erramos</a></li>
+              <li><a class="menu" href="/especial">Especial</a></li>
+              <li><a class="menu" href="/esporte">Esporte</a></li>
+              <li><a class="menu" href="/etiquetando">Etiquetando</a></li>
+              <li><a class="menu" href="/gastronomia">Gastronomia</a></li>
+              <li><a class="menu" href="/internet">Internet</a></li>
+              <li><a class="menu" href="/moda">Moda</a></li>
+              <li><a class="menu" href="/mundo">Mundo</a></li>
+              <li><a class="menu" href="/natureza">Natureza</a></li>
+              <li><a class="menu" href="/negocios">Negócios</a></li>
+              <li><a class="menu" href="/open-business">Open Business</a></li>
+              <li><a class="menu" href="/pet">Pet</a></li>
+              <li><a class="menu" href="/prefeitura">Prefeitura</a></li>
+              <li><a class="menu" href="/publieditorial">Publieditorial</a></li>
+              <li><a class="menu" href="/religiao">Religião</a></li>
+              <li><a class="menu" href="/saude">Saúde</a></li>
+              <li><a class="menu" href="/seu-dinheiro">Seu Dinheiro</a></li>
+              <li><a class="menu" href="/social">Social</a></li>
+              <li><a class="menu" href="/tecnologia">Tecnologia</a></li>
+              <li><a class="menu" href="/turismo">Turismo</a></li>
+              <li><a class="menu" href="/urgente">Urgente</a></li>
+              <li><a class="menu" href="/vida-e-estilo">Vida e Estilo</a></li>
+            </ul>
+          </li>
+
+          <li><a class="menu" href="/grupo-etiqueta/servicos/parceiros/">Parceiros</a></li>
+          <li><a class="menu" href="/promocao">Promoções</a></li>
+          <li><a class="menu" href="/anuncie">Anuncie</a></li>
+          <li><a class="menu" href="/contato">Fale Conosco</a></li>
+          <li><a class="menu" href="<?php template_directory() ?>/assets/pdf/midia_kit.pdf" target="_blank">Mídia KIT</a></li>
+
         </ul>
-        <form class="navbar-form navbar-left">
+        <!-- <form class="navbar-form">
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Search">
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
-        </ul>
+        </form> -->
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
