@@ -3,15 +3,17 @@
   <div class="container">
 
     <div class="col-md-3 logo rede-social">
+      <a class="hidden-md hidden-lg" href="/"><img src="<?php template_directory() ?>/assets/images/layout/logo.png"></a>
       <div class="row">
         <a href="https://www.facebook.com/grupoetiquetaoficial" target="_blank"><i class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/grupoetiqueta/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://twitter.com/grupoetiqueta" target="_blank"><i class="fab fa-twitter-square"></i></a>
         <a href="https://www.youtube.com/channel/UCq1ApjWeG5GANkeazymACFQ" target="_blank"><i class="fab fa-youtube"></i></a>
       </div>
-      <a href="/"><img src="<?php template_directory() ?>/assets/images/layout/logo.png"></a>
+      <a class="hidden-xs hidden-sm" href="/"><img src="<?php template_directory() ?>/assets/images/layout/logo.png"></a>
     </div>
 
+    <div class="hidden-xs hidden-sm">
     <div class="col-md-3 noticias">
       <p class="title">NOTÍCIAS</p>
       <div class="col-md-12 no-padding">
@@ -54,6 +56,7 @@
         <a href="/anuncie"><p>Anuncie</p></a>
       </div>
     </div>
+    </div>
 
   </div>
 
@@ -61,7 +64,7 @@
   <div class="about">
     <div class="container">
 
-      <div class="col-md-8 direitos">
+      <div class="col-md-8 col-xs-12 col-sm-12 direitos">
         <?php if (is_author()): ?>
           <p>
             Todos os direitos reservados. Os artigos, opiniões e informações são de responsabilidade dos respectivos autores.
@@ -74,12 +77,12 @@
         <?php endif; ?>
       </div>
       
-      <div class="col-md-4 pull-right">
+      <div class="col-md-4 col-xs-12 row">
         
-        <div class="col-md-6 conteudo">
+        <div class="col-md-6 col-xs-6 col-sm-6 conteudo">
           <a target="_blank" href="http://www.bettacommerce.com.br"><img src="<?php template_directory() ?>/assets/images/layout/logo-betta.png"></a>
         </div>
-        <div class="col-md-6 produzido">
+        <div class="col-md-6 col-xs-6 col-sm-6 produzido">
           <a target="_blank" href="/"><img src="<?php template_directory() ?>/assets/images/layout/logo-midia_integrada.png"></a>
         </div>
 

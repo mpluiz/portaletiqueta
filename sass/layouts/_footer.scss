@@ -66,3 +66,35 @@ footer {
     right: 25px;
   }
 }
+
+@media (max-width: 813.98px) {
+  footer {
+    height: auto;
+    .container {
+      margin-top: 25px;
+
+      .logo.rede-social {
+        .row {
+          margin-top: 15px;
+          margin-bottom: 0px;
+
+          a {
+            font-size: 24px;
+            color: #B4B4B4;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    .about {
+      margin-top: 25px;
+      .container {
+        margin-top: 15px;
+
+        .direitos {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
