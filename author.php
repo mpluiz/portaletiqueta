@@ -17,7 +17,7 @@ if ($id != null){
   $posts = get_posts($query);
 
   // PEGANDO INFORMAÇÕES DO AUTOR ATUAL
-  $user_meta = get_user_meta($id);
+  $user_meta = get_the_author_meta($id);
 
 }
 
