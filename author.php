@@ -8,16 +8,16 @@ Template Name: Authors
 
 <?php
 
-$id = get_the_author_ID();
+$author = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
 
-if ($id != null){
+if ($author->ID != null) {
 
   // PEGANDO POSTS DO AUTOR ATUAL.
-  $query = array('author' => $id, 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
+  $query = array('author' => $author->ID, 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
   $posts = get_posts($query);
 
   // PEGANDO INFORMAÇÕES DO AUTOR ATUAL
-  $user_meta = get_the_author_meta($id);
+  // $user_meta = get_the_author_meta('display_name');
 
 }
 
@@ -25,7 +25,7 @@ get_header();
 
 ?>
 
-<?php if ($id != null): ?>
+<?php if ($author->ID != null): ?>
 <section id="author">
 
   <div class="header">
@@ -34,13 +34,13 @@ get_header();
       <?php
         echo '<div class="author">
                 <div class="circle">
-                  '.get_avatar($id).'
+                  '.get_avatar($author->ID).'
                 </div>
 
                 <div class="info">
-                  <span class="name">'.$user_meta['first_name'][0].'</span>
-                  <p class="email">'.get_the_author_email().'</p>
-                  <p class="bio">'.$user_meta['description'][0].'</p>
+                  <span class="name">'.$author->display_name.'</span>
+                  <p class="email">'.$author->user_email.'</p>
+                  <p class="bio">'.$author->description.'</p>
                 </div>
               </div>';
       ?>

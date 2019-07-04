@@ -497,7 +497,7 @@ body {
 
   .container {
 
-    // padding: 0px;
+    padding-bottom: 15px;
     .title {
       font-size: $title-section;
       font-weight: 600;
@@ -521,6 +521,7 @@ body {
           // bottom: 0;
           width: 100%;
           height: auto;
+          filter: grayscale(1);
           // padding: 0 10px 0 10px;
         }
       }
