@@ -309,12 +309,12 @@
                 .item {
                     .post {
                         display: block;
-                        height: 175px;
+                        height: auto;
                         overflow: hidden;
 
                         img {
                             width: 100%;
-                            min-height: 175px;
+                            min-height: unset;
                             ;
                         }
                     }
