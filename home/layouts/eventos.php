@@ -1,4 +1,4 @@
-<section id="eventos">
+<section id="eventos" class="hidden-xs hidden-sm">
   <div class="container">
     <h3 style="color: #fff; font-weight: 700;">EVENTOS</h3>
     <div class="eventos owl-carousel owl-theme">
