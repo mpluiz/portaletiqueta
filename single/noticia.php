@@ -36,6 +36,7 @@ echo '<section id="single-noticias">
 
             echo $content;
 
+            echo '</div>';
 
             include(get_template_directory().'/includes/publicidade_interna.php');
             include(get_template_directory().'/includes/gallery/gallery.php');
