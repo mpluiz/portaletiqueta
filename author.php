@@ -62,7 +62,7 @@ get_header();
                 <div class="col-md-4 item"> 
                   <a class="post" href='.get_permalink($id).'>
                     <img src='.$thumbnail.'>
-                    <p class="page-noticia">'.get_field('categorias', $id).'</p>           
+                    <p class="page-noticia">'.get_field('categoria', $id).'</p>           
                   </a>
                   <a class="title-post" href='.get_permalink($id).'>
                     <h4>'.$post->post_title.'</h4>
