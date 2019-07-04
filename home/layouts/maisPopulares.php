@@ -1,4 +1,4 @@
-<section id="mais_populares" class="hidden-xs hidden-sm">
+<section id="mais_populares">
   <div class="container">
     
     <div class="col-md-8">  

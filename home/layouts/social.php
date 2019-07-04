@@ -1,4 +1,4 @@
-<section id="social" class="hidden-xs hidden-sm">
+<section id="social">
   <div class="container">
 
     <div class="col-md-8">

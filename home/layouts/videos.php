@@ -1,4 +1,4 @@
-<section id="videos-home" class="hidden-xs hidden-sm">
+<section id="videos-home">
   <div class="container">
     <h3 style="color: #fff; font-weight: 700;">TV ETIQUETA</h3>
     <div class="col-md-12 videos no-padding">
