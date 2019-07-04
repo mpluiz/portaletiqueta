@@ -14,6 +14,15 @@ $(document).ready(function(){
     responsiveClass:true,
     dots: false,
     nav: true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+        },
+        800:{
+            items:2,
+        }
+    },
     navText: [
       "<",
       ">"
