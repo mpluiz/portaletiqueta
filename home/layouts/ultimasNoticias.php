@@ -86,10 +86,10 @@
           if ($ativo == true) {
             if ($posicao == 'ultimas_noticias_lateral') {
               if ($duplo != false) {
-                echo '<div class="col-md-12 img-1">
+                echo '<div class="col-md-12 col-xs-6 img-1">
                           <img src=' . get_field('imagem', $publicidade->ID, true) . '>
                         </div>
-                        <div class="col-md-12 img-2">
+                        <div class="col-md-12 col-xs-6 img-2">
                           <img src=' . get_field('segunda_imagem', $publicidade->ID, true) . '>
                         </div>
                       ';

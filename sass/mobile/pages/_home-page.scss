@@ -1,4 +1,4 @@
-@media (max-width: 813.98px) {
+@media (min-width: 319.98px) and (max-width: 565.98px) {
     #ultimas_noticias {
         .container {
             padding: 0px;
@@ -73,20 +73,20 @@
                 .img-full {
                     padding: 0px;
                     display: block;
-                    height: 450px;
+                    height: auto;
                     overflow: hidden;
 
                     img {
                         width: 100%;
-                        min-height: 450px;
+                        min-height: unset;
                     }
                 }
 
                 .img-1 {
-                    padding: 0px;
+                    padding: unset;
                     display: block;
-                    height: 215px;
-                    overflow: hidden;
+                    height: auto;
+                    padding-right: 7.5px;
 
                     img {
                         width: 100%;
@@ -95,11 +95,11 @@
                 }
 
                 .img-2 {
-                    padding: 0px;
+                    padding: unset;
                     display: block;
-                    height: 215px;
-                    overflow: hidden;
-                    margin-top: 15px;
+                    height: auto;
+                    margin-top: 0px;
+                    padding-left: 7.5px;
 
                     img {
                         width: 100%;
@@ -145,7 +145,7 @@
                 .item {
                     .post {
                         display: block;
-                        height: 375px;
+                        height: auto;
                         overflow: hidden;
 
                         img {
@@ -170,20 +170,20 @@
                 .img-full {
                     padding: 0px;
                     display: block;
-                    height: 450px;
+                    height: auto;
                     overflow: hidden;
 
                     img {
                         width: 100%;
-                        min-height: 450px;
+                        min-height: unset;
                     }
                 }
 
                 .img-1 {
-                    padding: 0px;
+                    padding: unset;
                     display: block;
-                    height: 215px;
-                    overflow: hidden;
+                    height: auto;
+                    padding-right: 7.5px;
 
                     img {
                         width: 100%;
@@ -192,11 +192,11 @@
                 }
 
                 .img-2 {
-                    padding: 0px;
+                    padding: unset;
                     display: block;
-                    height: 215px;
-                    overflow: hidden;
-                    margin-top: 15px;
+                    height: auto;
+                    margin-top: 0px;
+                    padding-left: 7.5px;
 
                     img {
                         width: 100%;
@@ -242,19 +242,19 @@
             .politica {
                 .principal {
                     display: block;
-                    height: 350px;
+                    height: auto;
                     overflow: hidden;
                     margin-bottom: 15px;
                     border-bottom: 1px solid #ccc;
 
                     .post {
                         display: block;
-                        height: 220px;
+                        height: auto;
                         overflow: hidden;
 
                         img {
                             width: 100%;
-                            min-height: 220px;
+                            min-height: unset;
                         }
                     }
                 }
@@ -269,7 +269,7 @@
                     .post {
                         text-decoration: none !important;
                         display: block;
-                        height: 100px;
+                        height: 75px;
                         overflow: hidden;
 
                         img {
@@ -291,7 +291,7 @@
 
                 .btn-mais {
 
-                    float: right;
+                    float: unset;
                     border: none;
                     border-radius: 0;
                     background-color: coral;
@@ -591,4 +591,602 @@
             }
         }
     }
+}
+
+@media (min-width: 566.98px) and (max-width: 997.98px) {
+    #ultimas_noticias {
+        .container {
+            padding: 0px;
+
+            .noticia-sem-foto {
+                padding: 0 15px 25px 15px;
+
+                a {
+                    text-decoration: none;
+
+                    h4 {
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: #1B1B1B;
+                    }
+                }
+
+                .descricao {
+                    font-size: 16px;
+                }
+
+                .separador {
+                    border-bottom: 0.5px solid #ccc;
+                    margin-top: 15px;
+                }
+            }
+
+            .noticia-dupla {
+                margin-bottom: 15px;
+                .box-imagem {
+                    display: block;
+                    max-height: unset;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    .cat-noticia {
+                        top: 5px;
+                        left: 20px;
+                    }
+                }
+
+                .box-info {
+                    a {
+                        text-decoration: none;
+
+                        .title {
+                            font-size: 20px;
+                            line-height: 24px;
+                            margin-top: 10px;
+                            color: #1B1B1B;
+                            cursor: pointer;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        .descricao {
+                            font-size: 14px;
+                            font-weight: normal;
+                            color: #1B1B1B;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .publicidade-lateral {
+                
+                .img-full {
+                    padding: 0px;
+                    display: block;
+                    height: auto;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        min-height: unset;
+                    }
+                }
+
+                .img-1 {
+                    padding: unset;
+                    display: block;
+                    height: auto;
+                    padding-right: 7.5px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .img-2 {
+                    padding: unset;
+                    display: block;
+                    height: auto;
+                    margin-top: 0px;
+                    padding-left: 7.5px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .publicidade-inferior {
+                padding: 0px;
+
+                .title-publicidade {
+                    padding: 0 15px 0 15px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .img-1 {
+                    padding-left: 0px;
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .img-2 {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    #social,
+    #mais_populares {
+        .container {
+            padding: 0px;
+
+            .ultimas_noticias,
+            .social,
+            .mais_populares {
+                .item {
+                    .post {
+                        display: block;
+                        height: auto;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .title-post {
+                        text-decoration: none;
+
+                        .post-description {
+                            font-size: 13px;
+                            line-height: 18px;
+                            color: rgba(0, 0, 0, .7);
+                        }
+                    }
+                }
+            }
+
+            .publicidade-lateral {
+
+                .img-full {
+                    padding: 0px;
+                    display: block;
+                    height: auto;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        min-height: unset;
+                    }
+                }
+
+                .img-1 {
+                    padding: unset;
+                    display: block;
+                    height: auto;
+                    padding-right: 7.5px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .img-2 {
+                    padding: unset;
+                    display: block;
+                    height: auto;
+                    margin-top: 0px;
+                    padding-left: 7.5px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .publicidade-inferior {
+                padding: 0px;
+
+                .title-publicidade {
+                    padding: 0 15px 0 15px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .img-1 {
+                    padding-left: 0px;
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .img-2 {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    #noticias_destaque {
+        margin-top: 25px;
+
+        .container {
+            padding: 0px;
+
+            .encontro,
+            .cidade,
+            .politica {
+                .principal {
+                    display: block;
+                    height: auto;
+                    overflow: hidden;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #ccc;
+
+                    .post {
+                        display: block;
+                        height: auto;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            min-height: 220px;
+                        }
+                    }
+                }
+
+                .sub {
+                    display: block;
+                    height: 115px;
+                    overflow: hidden;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #ccc;
+
+                    .post {
+                        text-decoration: none !important;
+                        display: block;
+                        height: 100px;
+                        overflow: hidden;
+
+                        img {
+                            width: 40%;
+                            min-height: 100px;
+                            ;
+                            float: left;
+                            margin-right: 15px;
+                        }
+
+                        h4 {
+                            text-decoration: none !important;
+                            color: #151515;
+                            font-weight: 700;
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .btn-mais {
+
+                    float: unset;
+                    border: none;
+                    border-radius: 0;
+                    background-color: coral;
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    #destaque,
+    #gastronomia {
+        .container {
+            .destaque {
+                .item {
+                    .post {
+                        display: block;
+                        height: 175px;
+                        overflow: hidden;
+
+                        img {
+                            width: 100%;
+                            min-height: 175px;
+                            ;
+                        }
+                    }
+
+                    .title-post {
+                        text-decoration: none;
+
+                        .post-description {
+                            font-size: 13px;
+                            line-height: 18px;
+                            color: rgba(0, 0, 0, .7);
+                        }
+                    }
+                }
+
+                .owl-nav {
+                    position: absolute;
+                    top: -65px;
+                    right: 0px;
+
+                    .owl-prev,
+                    .owl-next {
+                        background-color: rgba(0, 0, 0, 0);
+                        border: solid 0.5px #151515;
+                        color: #151515;
+                    }
+                }
+            }
+        }
+    }
+
+    #publicidade_inferior {
+        .container {
+            padding: 0px;
+
+            .publicidade-inferior {
+                padding: 0px;
+
+                .title-publicidade {
+                    padding: 0 15px 0 15px;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    #videos-home {
+        margin-top: 25px;
+        background-color: #151515;
+        padding-bottom: 50px;
+
+        .container {
+            padding-top: 50px;
+
+            .title-videos {
+                color: #fff;
+                font-weight: 600;
+                font-size: 28px;
+            }
+
+            .videos {
+                margin-top: 15px;
+
+                .video-principal {
+                    padding-right: 15px;
+                }
+
+                .lista-videos {
+                    span {
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .title-video {
+                        span {
+                            color: #fff;
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .list-group-item {
+                        background-color: #151515;
+                        border: 1.2px solid #080808;
+                    }
+                }
+            }
+        }
+    }
+
+    #noticias-meio,
+    #noticias-inferior {
+        .container {
+
+            #etiquetando,
+            #encontro,
+            #cidade {
+                margin-top: 50px;
+
+                .title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #151515;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                .principal {
+                    margin-top: 15px;
+
+                    .title-noticia {
+                        font-size: 18px;
+                        color: #222222;
+                        line-height: 28px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        margin: 10px 0 10px;
+                        font-size: $description;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 225px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .menores {
+                    margin-top: 25px;
+
+                    span {
+                        font-size: $description;
+                        line-height: 20px;
+                        font-weight: 600;
+                    }
+
+                    img {
+                        // width: 100%;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    #carousel-colunistas {
+        background-color: #F1F1F1;
+
+        .container {
+
+            // padding: 0px;
+            .title {
+                font-size: $title-section;
+                font-weight: 600;
+                margin: 25px 0 25px 0;
+            }
+
+            a {
+                color: #333 !important;
+
+                .circle {
+                    background-color: #ccc;
+                    border-radius: 50%;
+                    width: 125px;
+                    height: 125px;
+                    overflow: hidden;
+                    position: relative;
+                    float: left;
+
+                    img {
+                        position: absolute;
+                        // bottom: 0;
+                        width: 100%;
+                        height: auto;
+                        // padding: 0 10px 0 10px;
+                    }
+                }
+
+                .info {
+                    margin: 15px 0 0 15px;
+                    float: left;
+                    max-width: 55%;
+
+                    .title {
+                        padding-left: 15px;
+                        font-size: 16px;
+                    }
+
+                    .description {
+                        margin: 10px 0 0 15px;
+                        font-size: 14px;
+                        // font-weight: 600;
+                    }
+                }
+            }
+
+            .owl-nav {
+                margin: 25px 0 25px 0 !important;
+
+                .owl-prev,
+                .owl-next {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: solid 0.5px #151515;
+                    color: #151515;
+                }
+            }
+        }
+    }
+
+    #eventos {
+        margin-top: 25px;
+        background-color: #151515;
+
+        .container {
+            padding-top: 50px;
+
+            .eventos {
+                padding-bottom: 50px;
+
+                .item {
+                    display: block;
+                    height: 500px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        min-height: 500px;
+                    }
+
+                    .box {
+                        width: 25%;
+                        position: absolute;
+                        top: 15px;
+                        right: 15px;
+                        padding: 15px;
+                        background-color: #ccc;
+
+                        a.content {
+                            color: unset;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+
+                            .head {
+                                h4 {
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .veja-mais {
+                    position: absolute;
+                    bottom: 15px;
+                    right: 15px;
+                    border: 2px solid #fff;
+                    border-radius: 0px;
+                    background-color: #fff0;
+                    color: #fff;
+                    font-size: 32px;
+                    padding: 10px 30px 10px 30px;
+                }
+            }
+        }
+    }
+
 }

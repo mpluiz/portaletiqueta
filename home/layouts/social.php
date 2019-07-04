@@ -84,7 +84,7 @@
           if ($ativo == true) {
             if ($posicao == 'social_lateral') {
               if ($duplo != false) {
-                echo '<div class="col-md-12 img-1">
+                echo '<div class="col-md-12 col-xs-6 img-1">
                           <img src=' . get_field('imagem', $publicidade->ID, true) . '>
                         </div>
                         <div class="col-md-12 img-2">
@@ -92,7 +92,7 @@
                         </div>
                       ';
               } else {
-                echo '<div class="col-md-12 img-full">
+                echo '<div class="col-md-12 col-xs-6 img-full">
                           <img src=' . get_field('imagem', $publicidade->ID, true) . '>
                         </div>
                       ';
