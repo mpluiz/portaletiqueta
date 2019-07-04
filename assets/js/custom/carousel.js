@@ -1,27 +1,31 @@
-$(document).ready(function(){
-  $('.mais_populares, .social, .eventos, .radar').owlCarousel({                                                                                                              
-    items:1,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoplayTimeout:3000,
+$(document).ready(function () {
+  $('.mais_populares, .social, .eventos, .radar').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
     dots: false
-  });     
+  });
 
   $('.destaque, .gastronomia').owlCarousel({
-    items:4,
-    margin:10,
-    responsiveClass:true,
+    items: 4,
+    margin: 10,
+    responsiveClass: true,
     dots: false,
     nav: true,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:2,
-        },
-        800:{
-            items:2,
-        }
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      768: {
+        items: 2,
+      },
+
+      1024: {
+        items: 4,
+      }
     },
     navText: [
       "<",
@@ -30,17 +34,17 @@ $(document).ready(function(){
   });
 
   $('.patrocinadores').owlCarousel({
-    items:8,
-    margin:10,
-    responsiveClass:true,
+    items: 8,
+    margin: 10,
+    responsiveClass: true,
     dots: false,
     nav: true
   });
 
   $('.colunistas').owlCarousel({
-    items:3,
-    margin:10,
-    responsiveClass:true,
+    items: 3,
+    margin: 10,
+    responsiveClass: true,
     dots: false,
     nav: true,
     navText: [
