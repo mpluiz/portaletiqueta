@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="col-md-8">
-      <a class="title-section" href="/noticias/ultimas-noticias/">
+      <a class="title-section" href="#ultimas_noticias">
         <h3>ÚLTIMAS NOTÍCIAS</h3>
       </a>
       <div class="row">

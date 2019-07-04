@@ -1,8 +1,8 @@
-<section id="mais_populares">
+<section id="mais_populares" class="hidden-xs hidden-sm">
   <div class="container">
     
     <div class="col-md-8">  
-      <a class="title-section" href="/mais-populares/"><h3>DESTAQUES</h3></a>
+      <a class="title-section" href="#mais_populares"><h3>DESTAQUES</h3></a>
       <div class="mais_populares owl-carousel owl-theme">
       <?php
         foreach($noticias as $noticia){
