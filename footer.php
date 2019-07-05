@@ -25,7 +25,7 @@
         </div>
         <div class="col-md-6">
           <a href="/politica"><p>Política</p></a>
-          <a href="/social"><p>Social</p></a>
+          <a href="/brasil_e_mundo"><p>Brasil e Mundo</p></a>
           <a href="/tv-etiqueta"><p>Videos</p></a>
         </div>
       </div>
