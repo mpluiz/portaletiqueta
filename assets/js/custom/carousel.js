@@ -8,7 +8,7 @@ $(document).ready(function () {
     dots: false
   });
 
-  $('.gastronomia').owlCarousel({
+  $('.gastronomias, .destaque').owlCarousel({
     items: 4,
     margin: 10,
     responsiveClass: true,
