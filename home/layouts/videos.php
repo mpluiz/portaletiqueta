@@ -14,7 +14,7 @@
         endforeach;
         ?>
 
-        <a class="btn btn-mais m-top" href="/videos">Veja +</a>
+        <a class="btn btn-mais m-top hidden-md hidden-lg" href="/videos">Veja +</a>
       </div>
 
       <div class="col-md-4 col-xs-12 lista-videos hidden-xs">
