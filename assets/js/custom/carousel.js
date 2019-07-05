@@ -94,7 +94,7 @@ $(document).ready(function () {
       },
 
       1024: {
-        items: 4,
+        items: 3,
       }
     },
     navText: [
