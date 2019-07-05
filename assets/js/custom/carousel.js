@@ -47,6 +47,19 @@ $(document).ready(function () {
     responsiveClass: true,
     dots: false,
     nav: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      567: {
+        items: 2,
+      },
+
+      1024: {
+        items: 4,
+      }
+    },
     navText: [
       "<",
       ">"
