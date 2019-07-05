@@ -1,0 +1,177 @@
+@media (min-width: 319.98px) and (max-width: 565.98px) {
+    #author {
+        .header {
+            padding: 25px 15px 25px 15px;
+
+            .container {
+                padding: unset;
+
+                .author {
+                    text-align: center;
+
+                    .line {
+                        .circle {
+                            width: 100px;
+                            height: 100px;
+                            position: unset;
+                            float: unset;
+                            display: -webkit-inline-box;
+
+                            img {
+                                position: unset;
+                                width: 100%;
+                                height: auto;
+                                filter: grayscale(1);
+                            }
+                        }
+                    }
+
+                    .info {
+                        margin: unset;
+                        float: left;
+                        max-width: unset;
+
+                        .name {
+                            font-size: 32px;
+                        }
+
+                        .email {
+                            margin: -5px 0 0 15px;
+                            font-size: 14px;
+                        }
+
+                        .bio {
+                            margin: 10px 0 0 15px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .posts {
+            margin-top: 25px;
+
+            .item {
+                margin-top: 15px;
+                display: block;
+                height: 375px;
+                overflow: hidden;
+
+                .post {
+                    display: block;
+                    height: 215px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        min-height: 215px;
+                    }
+                }
+
+                .title-post {
+                    text-decoration: none;
+
+                    .post-description {
+                        font-size: 13px;
+                        line-height: 18px;
+                        color: rgba(0, 0, 0, .7);
+                    }
+                }
+            }
+        }
+    }
+
+    #not_found {
+        .container {}
+    }
+
+}
+
+@media (min-width: 566.98px) and (max-width: 997.98px) {
+    #author {
+        .header {
+            padding: 25px 15px 25px 15px;
+
+            .container {
+                padding: unset;
+
+                .author {
+                    text-align: center;
+
+                    .line {
+                        .circle {
+                            width: 100px;
+                            height: 100px;
+                            position: unset;
+                            float: unset;
+                            display: -webkit-inline-box;
+
+                            img {
+                                position: unset;
+                                width: 100%;
+                                height: auto;
+                                filter: grayscale(1);
+                            }
+                        }
+                    }
+
+                    .info {
+                        margin: unset;
+                        float: left;
+                        max-width: unset;
+
+                        .name {
+                            font-size: 32px;
+                        }
+
+                        .email {
+                            margin: -5px 0 0 15px;
+                            font-size: 14px;
+                        }
+
+                        .bio {
+                            margin: 10px 0 0 15px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .posts {
+            margin-top: 25px;
+
+            .item {
+                margin-top: 15px;
+                height: auto;
+
+                .post {
+                    display: block;
+                    height: auto;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        min-height: unset;
+                    }
+                }
+
+                .title-post {
+                    text-decoration: none;
+
+                    .post-description {
+                        font-size: 13px;
+                        line-height: 18px;
+                        color: rgba(0, 0, 0, .7);
+                    }
+                }
+            }
+        }
+    }
+
+    #not_found {
+        .container {}
+    }
+
+}

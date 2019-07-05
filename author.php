@@ -33,11 +33,13 @@ get_header();
 
       <?php
         echo '<div class="author">
-                <div class="circle">
-                  '.get_avatar($author->ID).'
+                <div class="line">
+                  <div class="circle">
+                    '.get_avatar($author->ID).'
+                  </div>
                 </div>
 
-                <div class="info">
+                <div class="info col-xs-12">
                   <span class="name">'.$author->display_name.'</span>
                   <p class="email">'.$author->user_email.'</p>
                   <p class="bio">'.$author->description.'</p>
@@ -50,31 +52,33 @@ get_header();
 
   <div class="posts">
     <div class="container">
+      <div class="row">
 
-      <?php
-        foreach ($posts as $post){
-          $id = $post->ID;
-          $category = get_the_category($id);
-          $thumbnail = get_thumbnail($id);
-          if ($category[0]->slug == "blogs_e_colunas"){
-            if ($thumbnail != ''){
-              echo '
-                <div class="col-md-4 item"> 
-                  <a class="post" href='.get_permalink($id).'>
-                    <img src='.$thumbnail.'>
-                    <p class="page-noticia">'.get_field('categoria', $id).'</p>           
-                  </a>
-                  <a class="title-post" href='.get_permalink($id).'>
-                    <h4>'.$post->post_title.'</h4>
-                    <p class="post-description">'.get_field('descricao', $id).'</p>
-                  </a>
-                </div>
-              ';
+        <?php
+          foreach ($posts as $post){
+            $id = $post->ID;
+            $category = get_the_category($id);
+            $thumbnail = get_thumbnail($id);
+            if ($category[0]->slug == "blogs_e_colunas"){
+              if ($thumbnail != ''){
+                echo '
+                  <div class="col-md-4 item"> 
+                    <a class="post" href='.get_permalink($id).'>
+                      <img src='.$thumbnail.'>
+                      <p class="page-noticia">'.get_field('categoria', $id).'</p>           
+                    </a>
+                    <a class="title-post" href='.get_permalink($id).'>
+                      <h4>'.$post->post_title.'</h4>
+                      <p class="post-description">'.get_field('descricao', $id).'</p>
+                    </a>
+                  </div>
+                ';
+              }
             }
           }
-        }
-      ?>
+        ?>
 
+      </div>
     </div>
   </div>
 

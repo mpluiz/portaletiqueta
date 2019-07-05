@@ -47,5 +47,16 @@
 // MOBILE
 
 // PAGES
-
 @import 'mobile/pages/home-page';
+@import 'mobile/pages/contato';
+@import 'mobile/pages/anuncie';
+@import 'mobile/pages/parceiros';
+
+// LAYOUTS
+@import 'mobile/layouts/category';
+@import 'mobile/layouts/single';
+@import 'mobile/layouts/author';
+
+// INCLUDES
+@import 'mobile/includes/patrocinadores';
+@import 'mobile/includes/publicidade_interna';
