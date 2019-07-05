@@ -25,10 +25,10 @@ if ($id_gallery) {
             echo '<div class="title-publicidade"><h3>PUBLICIDADE</h3></div>';
           }
           if ($imagem1 != '' && $imagem2 != '') {
-            echo '<div class="col-md-12 img-1">
+            echo '<div class="col-md-12 col-xs-6 img-1">
                   <img src=' . $imagem1 . '>
                 </div>
-                <div class="col-md-12 img-2">
+                <div class="col-md-12 col-xs-6 img-2">
                   <img src=' . $imagem2 . '>
                 </div>
               ';
