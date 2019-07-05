@@ -13,23 +13,25 @@
           endif;
         endforeach;
         ?>
+
+        <a class="btn btn-mais m-top" href="/videos">Veja +</a>
       </div>
 
-      <div class="col-md-4 col-xs-12 lista-videos">
+      <div class="col-md-4 col-xs-12 lista-videos hidden-xs">
         <span class="list-group-item title">ÚLTIMOS VÍDEOS</span>
         <?php
         foreach ($videos as $video) :
           if (get_field('video_principal', $video->ID) != true) :
             ?>
             <button type="button" class="list-group-item title-video" value="https://www.youtube.com/embed/<?php echo get_field('link_do_video', $video->ID) ?>?rel=0&amp;showinfo=0">
-              <img class="col-md-4 col-xs-12" src="http://i1.ytimg.com/vi/<?php echo get_field('link_do_video', $video->ID) ?>/hqdefault.jpg">
+              <img class="col-md-4 col-xs-12" src="http://i1.ytimg.com/vi/<?php echo get_field('link_do_video', $video->ID) ?>/default.jpg">
               <span class="col-md-8 col-xs-12"><?php echo $video->post_title ?></span>
             </button>
           <?php
           endif;
         endforeach;
         ?>
-        <div>
+        </div>
 
         </div>
       </div>

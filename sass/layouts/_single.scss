@@ -150,3 +150,24 @@
     }
   }
 }
+
+#single-videos {
+  .item {
+    height: 275px;
+    display: block;
+    overflow: hidden;
+
+    @media (min-width: 567.98px) and (max-width: 767.98px) {
+      height: auto;
+      overflow: unset;
+      
+      iframe {
+        height: -webkit-fill-available !important;
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+  }
+}

@@ -33,10 +33,18 @@
             }
           }
 
+          if ($category[0]->slug == 'videos') {
+              echo '
+              <section id="single-videos">
+                <div class="col-md-4 item m-top"> 
+                  <iframe id="video-principal" width="100%" height="200px" src="https://www.youtube.com/embed/'.get_field('link_do_video', $id).'?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                  <h4>' . get_the_title() . '</h4>
+                </div>
+              </section>
+            ';
+          }
+
           if ($category[0]->name == 'Revista') { }
-
-
-          if ($category[0]->name == 'Eventos') { }
 
           if ($category[0]->slug == 'promocao') {
             $date = get_field('promocao_ate', $id);
