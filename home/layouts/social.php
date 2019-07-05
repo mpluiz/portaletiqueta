@@ -32,7 +32,7 @@
         ?>
       </div> <!-- /.Carousel -->
 
-      <div class="destaque owl-carousel owl-theme m-top">
+      <div class="sub-social owl-carousel owl-theme m-top">
         <?php
 
         foreach ($noticias as $noticia) {
