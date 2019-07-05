@@ -51,7 +51,7 @@
                           </a>
 
                           <a class="title-post" href=' . get_permalink($id) . '>
-                            <h4>' . $noticia->post_title . '</h4>
+                            <p class="post-description">' .$noticia->post_title. '</p>
                           </a>
                         </div>
                       ';
