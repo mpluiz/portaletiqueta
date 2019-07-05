@@ -297,13 +297,32 @@ if (is_single() ){
   </nav>
 </div> <!-- .central-menu -->
 
-<style>
-  .navbar-mobile.navbar-brand img {
-
-  }
-</style>
-
 <div class="nav-mobile hidden-sm hidden-md hidden-lg">
+  <div class="col-md-3 publicidade-menu" id="publicidade-menu">
+      <?php
+      $query = array('category_name' => 'publicidades', 'orderby' => 'date', 'order' => 'DESC', 'posts_per_page' => '-1'); 
+      $publicidades = get_posts($query);
+
+      foreach ($publicidades as $publicidade) {
+        $id = $publicidade->ID;
+        $date = get_field('ativo_ate', $id);
+        $ativo = get_field('ativo', $id, true);
+        $today = date('Ymd');
+        $posicao = get_field('posicao', $id);
+
+        if ($today <= $date) {
+          if ($ativo == true) {
+            if ($posicao == 'menu') {
+              echo '<a href="'.get_field('link', $publicidade->ID).'" target="_blank">
+                      <img style="margin-top: 10px; margin-bottom: 10px;" src=' . get_field('imagem', $publicidade->ID, true) . ' width="100%" height="55px">
+                    </a>';
+                    break;
+            }
+          }
+        }
+      }
+      ?>
+  </div>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
