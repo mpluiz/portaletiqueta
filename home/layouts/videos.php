@@ -1,6 +1,6 @@
 <section id="videos-home">
   <div class="container">
-    <h3 style="color: #fff; font-weight: 700;">TV ETIQUETA</h3>
+    <a href="/videos"><h3 style="color: #fff; font-weight: 700;">TV ETIQUETA</h3></a>
     <div class="videos row">
 
       <div class="col-md-8 col-xs-12 video-principal">

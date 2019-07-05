@@ -1,6 +1,6 @@
 <section id="eventos">
   <div class="container">
-    <h3 style="color: #fff; font-weight: 700;">EVENTOS</h3>
+    <a href="/eventos"><h3 style="color: #fff; font-weight: 700;">EVENTOS</h3></a>
     <div class="eventos owl-carousel owl-theme">
     <?php
     foreach ($eventos as $evento){
