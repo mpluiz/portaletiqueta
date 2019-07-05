@@ -22,7 +22,7 @@ get_header();
     <!-- DIV DO GOOGLE MAPS -->
     <div id="map"></div>
     
-    <form class="col-md-6" id="contatoForm" method="POST" onsubmit="return false">
+    <form class="col-md-6 col-xs-12" id="contatoForm" method="POST" onsubmit="return false">
       <p class="bg-success"></p>
       <p class="bg-danger"></p>
       <input type="text" class="form-control" placeholder="Nome" id="nome" required>

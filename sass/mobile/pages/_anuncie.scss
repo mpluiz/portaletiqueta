@@ -1,0 +1,39 @@
+@media (min-width: 319.98px) and (max-width: 565.98px) {
+    #anuncie {
+        .title {
+            font-size: 38px;
+            font-weight: 600;
+        }
+
+        form {
+            padding: 0 0 0 0 !important;
+            margin-top: 10px;
+
+            .bg-success,
+            .bg-danger {
+                padding: 15px;
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 566.98px) and (max-width: 997.98px) {
+    #anuncie {
+        .title {
+            font-size: 38px;
+            font-weight: 600;
+        }
+
+        form {
+            padding: 0 0 0 0 !important;
+            margin-top: 10px;
+
+            .bg-success,
+            .bg-danger {
+                padding: 15px;
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@media (min-width: 319.98px) and (max-width: 565.98px) {
+    #parceiros {
+        .container {
+            padding: 0px 15px 0 15px;
+
+            .parceiros {
+                padding: 0px;
+
+                .figure {
+                    height: 125px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 566.98px) and (max-width: 997.98px) {
+    #parceiros {
+        .container {
+            padding: 0px 15px 0 15px;
+
+            .parceiros {
+                padding: 0px;
+
+                .figure {
+                    height: 175px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@media (min-width: 319.98px) and (max-width: 565.98px) {
+    #contato {
+        #map {
+            height: 200px;
+            width: 100%;
+            float: right;
+            margin-top: 10px;
+        }
+
+        .title {
+            color: #333;
+            font-size: $title-page;
+            font-weight: 600;
+        }
+
+        form {
+            padding: 0 0 0 0 !important;
+            margin-top: 25px;
+
+            .bg-success,
+            .bg-danger {
+                padding: 15px;
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 566.98px) and (max-width: 997.98px) {
+    #contato {
+        #map {
+            height: 250px;
+            width: 100%;
+            float: right;
+            margin-top: 10px;
+        }
+
+        .title {
+            color: #333;
+            font-size: $title-page;
+            font-weight: 600;
+        }
+
+        form {
+            padding: 0 0 0 0 !important;
+            margin-top: 25px;
+
+            .bg-success,
+            .bg-danger {
+                padding: 15px;
+                display: none;
+            }
+        }
+    }
+
+}

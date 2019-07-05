@@ -4,16 +4,18 @@
   Template Name: Anuncie
 */
 
-get_header(); 
+get_header();
 
 ?>
 
 <script src="<?php template_directory(); ?>/pages/includes/js/inputmask.js"></script>
-<script src="<?php template_directory()?>/pages/includes/js/anuncie.js"></script>
+<script src="<?php template_directory() ?>/pages/includes/js/anuncie.js"></script>
 
 <section id="anuncie">
   <div class="container">
-    <a class="title-section"><h3>ANUNCIE</h3></a>
+    <a class="title-section">
+      <h3>ANUNCIE</h3>
+    </a>
     <div class="clearfix"></div>
     <form class="col-md-6" id="anuncieForm" method="POST" onsubmit="return false">
       <p class="bg-success"></p>
@@ -23,7 +25,7 @@ get_header();
       <input type="text" class="form-control m-top" placeholder="Nome da empresa/CNPJ" id="cnpj" required>
       <input type="email" class="form-control m-top" id="email" placeholder="E-mail" required>
       <input type="text" class="form-control m-top" id="telefone" placeholder="Telefone" required>
-      <div class="form-group m-top">  
+      <div class="form-group m-top">
         <select class="form-control" id="select">
           <option value="" disabled selected>Mídias</option>
           <option value="1">Revista Etiqueta</option>
