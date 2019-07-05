@@ -15,7 +15,7 @@
           $category_parent = get_category_parents($category[0]->category_parent);
           $thumbnail = get_thumbnail($id);
 
-          if (($category[0]->slug == 'noticias') or ($category_parent == 'Noticias/')) {
+          if (($category[0]->slug == 'noticias') or ($category_parent == 'Noticias/') or ($category[0]->slug == 'eventos')) {
             if ($thumbnail) {
               echo '
               <section id="noticias">
