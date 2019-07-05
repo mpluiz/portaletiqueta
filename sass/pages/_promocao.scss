@@ -1,98 +1,98 @@
-#promocao{
-  .container{
-    padding: 0px;
-    .title{
-      font-size: $title-page;
-      font-weight: 600;
-      padding-left: 15px;
-    }      
-    .item-ativo{
-      margin-top: 25px;
-      a{
-        text-decoration: none;
-        &:hover{
-          color: #337ab7;
-        }
-        &:active{
-          color: #337ab7;
-        }
-        img{
-          width: 100%;
-          height: auto;
-        }
-        .box{
-          max-height: 175px;
-          border: 0.5px solid #ccc;
-          padding: 10px;
-          .title-post {
-            font-size: 18px;
-            color: #222222;
-            font-weight: 600;
-            margin: 10px 0 10px;
-          }
-          .description{
-            font-size: 14px;
-            color: #222222;
-            font-weight: 500;
-            margin: 10px 0 10px;
-          }
-          .ativo{
-            font-size: 14px;
-            // color: #222222;
-            font-weight: 600;
-            position: absolute;
-            bottom: 0px;
-            right: 25px;
-          }
-        }
-      }
-    }
+// #promocao{
+//   .container{
+//     padding: 0px;
+//     .title{
+//       font-size: $title-page;
+//       font-weight: 600;
+//       padding-left: 15px;
+//     }      
+//     .item-ativo{
+//       margin-top: 25px;
+//       a{
+//         text-decoration: none;
+//         &:hover{
+//           color: #337ab7;
+//         }
+//         &:active{
+//           color: #337ab7;
+//         }
+//         img{
+//           width: 100%;
+//           height: auto;
+//         }
+//         .box{
+//           max-height: 175px;
+//           border: 0.5px solid #ccc;
+//           padding: 10px;
+//           .title-post {
+//             font-size: 18px;
+//             color: #222222;
+//             font-weight: 600;
+//             margin: 10px 0 10px;
+//           }
+//           .description{
+//             font-size: 14px;
+//             color: #222222;
+//             font-weight: 500;
+//             margin: 10px 0 10px;
+//           }
+//           .ativo{
+//             font-size: 14px;
+//             // color: #222222;
+//             font-weight: 600;
+//             position: absolute;
+//             bottom: 0px;
+//             right: 25px;
+//           }
+//         }
+//       }
+//     }
 
-    .item-inativo{
-      margin-top: 25px;
-      .disable{
-        background-color: #ccc;
-        filter: grayscale(100%);
-        pointer-events: none;
-        a{
-          text-decoration: none;
-          &:hover{
-            color: #337ab7;
-          }
-          &:active{
-            color: #337ab7;
-          }
-          img{
-            width: 100%;
-            height: auto;
-          }
-          .box{
-            max-height: 175px;
-            border: 0.5px solid #ccc;
-            padding: 10px;
-            .title-post {
-              font-size: 18px;
-              color: #222222;
-              font-weight: 600;
-              margin: 10px 0 10px;
-            }
-            .description{
-              font-size: 14px;
-              color: #222222;
-              font-weight: 500;
-              margin: 10px 0 10px;
-            }
-            .inativo{
-              font-size: 14px;
-              color: #222222;
-              font-weight: 600;
-              position: absolute;
-              bottom: 0px;
-              right: 25px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//     .item-inativo{
+//       margin-top: 25px;
+//       .disable{
+//         background-color: #ccc;
+//         filter: grayscale(100%);
+//         pointer-events: none;
+//         a{
+//           text-decoration: none;
+//           &:hover{
+//             color: #337ab7;
+//           }
+//           &:active{
+//             color: #337ab7;
+//           }
+//           img{
+//             width: 100%;
+//             height: auto;
+//           }
+//           .box{
+//             max-height: 175px;
+//             border: 0.5px solid #ccc;
+//             padding: 10px;
+//             .title-post {
+//               font-size: 18px;
+//               color: #222222;
+//               font-weight: 600;
+//               margin: 10px 0 10px;
+//             }
+//             .description{
+//               font-size: 14px;
+//               color: #222222;
+//               font-weight: 500;
+//               margin: 10px 0 10px;
+//             }
+//             .inativo{
+//               font-size: 14px;
+//               color: #222222;
+//               font-weight: 600;
+//               position: absolute;
+//               bottom: 0px;
+//               right: 25px;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
