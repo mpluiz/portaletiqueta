@@ -314,7 +314,7 @@ if (is_single() ){
           if ($ativo == true) {
             if ($posicao == 'menu') {
               echo '<a href="'.get_field('link', $publicidade->ID).'" target="_blank">
-                      <img style="margin-top: 10px; margin-bottom: 10px;" src=' . get_field('imagem', $publicidade->ID, true) . ' width="100%" height="55px">
+                      <img style="margin-top: 10px; margin-bottom: 10px;" src=' . get_field('imagem', $publicidade->ID, true) . ' width="100%" height="auto">
                     </a>';
                     break;
             }
@@ -394,8 +394,9 @@ if (is_single() ){
             </ul>
           </li>
 
-          <li><a class="menu" href="/grupo-etiqueta/servicos/parceiros/">Parceiros</a></li>
+          <li><a class="menu" href="/guia-gastronomias">Gastronomia</a></li>
           <li><a class="menu" href="/promocao">Promoções</a></li>
+          <li><a class="menu" href="/grupo-etiqueta/servicos/parceiros/">Parceiros</a></li>
           <li><a class="menu" href="/anuncie">Anuncie</a></li>
           <li><a class="menu" href="/contato">Fale Conosco</a></li>
           <li><a class="menu" href="<?php template_directory() ?>/assets/pdf/midia_kit.pdf" target="_blank">Mídia KIT</a></li>
