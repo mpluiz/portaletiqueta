@@ -63,7 +63,19 @@ $(document).ready(function () {
     margin: 10,
     responsiveClass: true,
     dots: false,
-    nav: true
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 3,
+      },
+      567: {
+        items: 6,
+      },
+
+      1024: {
+        items: 8,
+      }
+    },
   });
 
   $('.colunistas').owlCarousel({
