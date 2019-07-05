@@ -59,22 +59,22 @@
                       ';
                 }
                 if ($unico == true && $duplo == true && $triplo == false){
-                  echo '<div class="col-md-6">
+                  echo '<div class="col-md-6 col-xs-6">
                           <img src='.get_field('imagem', $id, true).'>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-xs-6">
                           <img src='.get_field('segunda_imagem', $id, true).'>
                         </div>
                       ';
                 }
                 if ($unico == true && $duplo == true && $triplo == true){
-                  echo '<div class="col-md-4">
+                  echo '<div class="col-md-4 col-xs-4">
                           <img src='.get_field('imagem', $id, true).'>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                           <img src='.get_field('segunda_imagem', $id, true).'>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-xs-4">
                           <img src='.get_field('terceira_imagem', $id, true).'>
                         </div>
                       ';

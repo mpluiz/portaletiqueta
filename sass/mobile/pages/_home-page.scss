@@ -542,26 +542,24 @@
         background-color: #151515;
 
         .container {
-            padding-top: 50px;
+            padding-top: 0px;
 
             .eventos {
                 padding-bottom: 50px;
 
                 .item {
                     display: block;
-                    height: 500px;
-                    overflow: hidden;
+                    height: auto;
+                    overflow: unset;
 
                     img {
                         width: 100%;
-                        min-height: 500px;
+                        min-height: unset;
                     }
 
                     .box {
-                        width: 25%;
-                        position: absolute;
-                        top: 15px;
-                        right: 15px;
+                        width: 100%;
+                        position: unset;
                         padding: 15px;
                         background-color: #ccc;
 
@@ -585,11 +583,11 @@
                     position: absolute;
                     bottom: 15px;
                     right: 15px;
-                    border: 2px solid #fff;
+                    border: 2px solid #333;
                     border-radius: 0px;
                     background-color: #fff0;
-                    color: #fff;
-                    font-size: 32px;
+                    color: #333;
+                    font-size: 22px;
                     padding: 10px 30px 10px 30px;
                 }
             }
@@ -1143,26 +1141,24 @@
         background-color: #151515;
 
         .container {
-            padding-top: 50px;
+            padding-top: 0px;
 
             .eventos {
                 padding-bottom: 50px;
 
                 .item {
                     display: block;
-                    height: 500px;
+                    height: auto;
                     overflow: hidden;
 
                     img {
                         width: 100%;
-                        min-height: 500px;
+                        min-height: unset;
                     }
 
                     .box {
-                        width: 25%;
-                        position: absolute;
-                        top: 15px;
-                        right: 15px;
+                        width: 100%;
+                        position: unset;
                         padding: 15px;
                         background-color: #ccc;
 
@@ -1186,11 +1182,11 @@
                     position: absolute;
                     bottom: 15px;
                     right: 15px;
-                    border: 2px solid #fff;
+                    border: 2px solid #333;
                     border-radius: 0px;
                     background-color: #fff0;
-                    color: #fff;
-                    font-size: 32px;
+                    color: #333;
+                    font-size: 24px;
                     padding: 10px 30px 10px 30px;
                 }
             }
