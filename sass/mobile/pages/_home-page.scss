@@ -371,7 +371,7 @@
         padding-bottom: 50px;
 
         .container {
-            padding-top: 50px;
+            padding-top: 0px;
 
             .title-videos {
                 color: #fff;
@@ -383,20 +383,24 @@
                 margin-top: 15px;
 
                 .video-principal {
-                    padding-right: 15px;
+                    iframe {
+                        height: 190px;
+                    }
                 }
 
                 .lista-videos {
+                    margin-top: 15px;
                     span {
                         color: #fff;
                         font-size: 18px;
-                        font-weight: 600;
+                        font-weight: normal;
+                        margin-top: 15px;
                     }
 
                     .title-video {
                         span {
                             color: #fff;
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 14px;
                         }
                     }
@@ -968,7 +972,7 @@
         padding-bottom: 50px;
 
         .container {
-            padding-top: 50px;
+            padding-top: 0px;
 
             .title-videos {
                 color: #fff;
@@ -980,20 +984,24 @@
                 margin-top: 15px;
 
                 .video-principal {
-                    padding-right: 15px;
+                    iframe {
+                        height: -webkit-fill-available;
+                    }
                 }
 
                 .lista-videos {
+                    margin-top: 15px;
                     span {
                         color: #fff;
                         font-size: 18px;
-                        font-weight: 600;
+                        font-weight: normal;
+                        margin-top: 15px;
                     }
 
                     .title-video {
                         span {
                             color: #fff;
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 14px;
                         }
                     }

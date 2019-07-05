@@ -406,7 +406,9 @@ body {
       margin-top: 15px;
 
       .video-principal {
-        padding-right: 15px;
+        iframe {
+            height: -webkit-fill-available;
+        }
       }
 
       .lista-videos {
