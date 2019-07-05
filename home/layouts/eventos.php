@@ -22,7 +22,7 @@
                     </div>
                   </a>
                 </div>
-                <a href="'.get_permalink($evento->ID).'" class="btn btn-default veja-mais">Veja +</a>
+                <a href="/eventos" class="btn btn-default veja-mais">Veja +</a>
               </div>';
       }
     }
