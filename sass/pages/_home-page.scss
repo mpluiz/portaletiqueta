@@ -42,6 +42,7 @@ body {
 
       .descricao {
         font-size: 16px;
+        font-weight: 500;
       }
 
       .separador {
@@ -545,17 +546,19 @@ body {
         }
       }
     }
+    
+      .owl-nav {
+        position: absolute;
+        top: -65px;
+        right: 0px;
 
-    .owl-nav {
-      margin: 25px 0 25px 0 !important;
-
-      .owl-prev,
-      .owl-next {
-        background-color: rgba(0, 0, 0, 0);
-        border: solid 0.5px #151515;
-        color: #151515;
+        .owl-prev,
+        .owl-next {
+          background-color: rgba(0, 0, 0, 0);
+          border: solid 0.5px #151515;
+          color: #151515;
+        }
       }
-    }
   }
 }
 

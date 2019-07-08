@@ -1,4 +1,4 @@
-<section class="hidden-xs" id="banner">
+<section id="banner">
   <div class="container">
     <div class="banner">
     <?php 

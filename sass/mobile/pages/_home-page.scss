@@ -1,4 +1,18 @@
 @media (min-width: 319.98px) and (max-width: 565.98px) {
+    #banner {
+        .container {
+            .extend {
+                height: auto;
+            }
+
+            img {
+                margin-top: 10px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
     #ultimas_noticias {
         .container {
             padding: 0px;
@@ -28,6 +42,7 @@
 
             .noticia-dupla {
                 margin-bottom: 15px;
+
                 .box-imagem {
                     display: block;
                     max-height: 225px;
@@ -390,6 +405,7 @@
 
                 .lista-videos {
                     margin-top: 15px;
+
                     span {
                         color: #fff;
                         font-size: 18px;
@@ -525,7 +541,9 @@
             }
 
             .owl-nav {
-                margin: 25px 0 25px 0 !important;
+                position: absolute;
+                top: -65px;
+                right: 0px;
 
                 .owl-prev,
                 .owl-next {
@@ -596,6 +614,19 @@
 }
 
 @media (min-width: 566.98px) and (max-width: 997.98px) {
+    #banner {
+        .container {
+            .extend {
+                height: auto;
+            }
+
+            img {
+                margin-top: 10px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
     #ultimas_noticias {
         .container {
             padding: 0px;
@@ -625,6 +656,7 @@
 
             .noticia-dupla {
                 margin-bottom: 15px;
+
                 .box-imagem {
                     display: block;
                     max-height: unset;
@@ -667,7 +699,7 @@
             }
 
             .publicidade-lateral {
-                
+
                 .img-full {
                     padding: 0px;
                     display: block;
@@ -989,6 +1021,7 @@
 
                 .lista-videos {
                     margin-top: 15px;
+
                     span {
                         color: #fff;
                         font-size: 18px;
