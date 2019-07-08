@@ -1,6 +1,6 @@
 <section id="carousel-colunistas">
   <div class="container m-top-2x">
-    <a class="title-section" href="#"><h3>BLOGS E COLUNAS</h3></a>
+    <a class="title-section" href="#carousel-colunistas"><h3>BLOGS E COLUNAS</h3></a>
     <div class="colunistas owl-carousel owl-theme m-top">
       <?php
         foreach($users as $user){
