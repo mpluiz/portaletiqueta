@@ -11,7 +11,6 @@ $(document).ready(function () {
   $('.gastronomias, .destaque').owlCarousel({
     items: 4,
     margin: 10,
-    responsiveClass: true,
     dots: false,
     nav: true,
     responsiveClass: true,
@@ -26,6 +25,9 @@ $(document).ready(function () {
       1024: {
         items: 4,
       }
+    },
+    beforeInit: function (elem) {
+      random(elem);
     },
     navText: [
       "<",
@@ -61,6 +63,9 @@ $(document).ready(function () {
   $('.patrocinadores').owlCarousel({
     items: 8,
     margin: 10,
+    loop: true, 
+    autoplay: true,
+    autoplayTimeout: 1000,
     responsiveClass: true,
     dots: false,
     responsiveClass: true,
@@ -81,6 +86,8 @@ $(document).ready(function () {
   $('.colunistas').owlCarousel({
     items: 3,
     margin: 10,
+    autoplay: true,
+    autoplayTimeout: 1000,
     responsiveClass: true,
     dots: false,
     nav: true,
@@ -97,6 +104,9 @@ $(document).ready(function () {
         items: 3,
 
       }
+    },
+    beforeInit: function (elem) {
+      random(elem);
     },
     navText: [
       "<",
