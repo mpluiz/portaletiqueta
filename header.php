@@ -90,6 +90,18 @@ if (is_single() ){
   <meta name="twitter:description" content="<?php echo get_field('descricao', $post->ID) ?>">
   <meta name="twitter:image" content="<?php echo $thumbnail ?>">
 
+  <!-- Hotjar Tracking Code for http://54.233.147.179 -->
+  <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:1397630,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
 <?php
       }
     }
