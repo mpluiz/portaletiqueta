@@ -14,13 +14,13 @@ if ($post_gallery):
   <?php
     foreach ($gallery as $imagem){
       echo '<div class="col-md-3 m-top">';
-        echo '<a class="open" href="'.$imagem.'"><img class="thumb" src="'.$imagem.'"></a>';
+        echo '<a class="open" href="'.$imagem.'"><img class="img-gallery" src="'.$imagem.'"></a>';
       echo '</div>';
     }
   ?>
 </div>
 
-<div class="col-md-12 m-top"><button class="btn col-md-6" id="loadmore" hidden>CARREGAR MAIS</button></div>
+<div class="col-md-12 m-top"><button class="btn col-md-6 col-md-offset-3 col-xs-12" id="loadmore" hidden>CARREGAR MAIS</button></div>
 
 <?php endif ?>
 
@@ -36,16 +36,17 @@ $(function () {
   });
 
   // CARREGAR MAIS
-  $(".thumb").slice(0, 8).show();                                                                                                                      
+  console.log($('.img-gallery'));
+  $('.img-gallery').slice(0, 4).show();
 
-  if ($('.thumb').length > 8) {
+  if ($('.img-gallery').length > 4) {
     $('#loadmore').attr('hidden', false);
   }
 
   $("#loadmore").on('click', function (e) {                                                                                                           
     e.preventDefault();                                                                                                                               
-    $(".thumb:hidden").slice(0, 4).slideDown();                                                                                                        
-    if ($(".thumb:hidden").length == 0) {                                                                                                              
+    $(".img-gallery:hidden").slice(0, 4).slideDown();                                                                                                        
+    if ($(".img-gallery:hidden").length == 0) {                                                                                                              
       $("#load").fadeOut('slow');                                                                                                                     
     }                                                                                                                                                 
   });                                                                                                                                                 

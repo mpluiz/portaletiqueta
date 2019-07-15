@@ -1,0 +1,29 @@
+@media (min-width: 319.98px) and (max-width: 997.98px) {
+    #gallery {
+        margin-left: auto;
+        margin-right: auto;
+
+        div {
+            a {
+                img {
+                    display: none;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    #loadmore {
+        background-color: #2d6cb5;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 0;
+    }
+
+    .gallerie-thumbbox {
+        display: none;
+    }
+
+}

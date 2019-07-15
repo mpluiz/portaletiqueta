@@ -10,6 +10,7 @@ $(document).ready(function () {
 
   $('.gastronomias, .destaque').owlCarousel({
     items: 4,
+    loop: true,
     margin: 10,
     dots: false,
     nav: true,
