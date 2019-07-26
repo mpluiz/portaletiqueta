@@ -421,6 +421,7 @@ if (is_single() ){
           <li><a class="menu" href="/guia-gastronomias">Gastronomia</a></li>
           <li><a class="menu" href="/promocao">Promoções</a></li>
           <li><a class="menu" href="/grupo-etiqueta/servicos/parceiros/">Parceiros</a></li>
+          <li><a class="menu" href="/quem-somos">Quem Somos</a></li>
           <li><a class="menu" href="/anuncie">Anuncie</a></li>
           <li><a class="menu" href="/contato">Fale Conosco</a></li>
           <li><a class="menu" href="<?php template_directory() ?>/assets/pdf/midia_kit.pdf" target="_blank">Mídia KIT</a></li>
