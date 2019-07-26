@@ -30,7 +30,7 @@
       </div>  <!-- /.Carousel -->
     </div>  <!-- /.Col-8 -->
         
-    <div class="col-md-4 publicidade-lateral">
+    <div class="col-md-4 col-xs-12 publicidade-lateral">
       <div class="title-publicidade"><h3>PUBLICIDADE</h3></div>
       <?php
         foreach($publicidades as $publicidade){
@@ -73,7 +73,7 @@
 
 <section id="publicidade_inferior">
   <div class="container">
-    <div class="col-md-12 publicidade-inferior">
+    <div class="col-md-12 col-xs-12 publicidade-inferior">
     <div class="title-publicidade"><h3>PUBLICIDADE</h3></div>
       <?php
         foreach($publicidades as $publicidade){

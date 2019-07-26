@@ -33,7 +33,7 @@
 
 <section id="publicidade_inferior">
   <div class="container">
-    <div class="col-md-12 publicidade-inferior">
+    <div class="col-md-12 col-xs-12 publicidade-inferior">
     <div class="title-publicidade"><h3>PUBLICIDADE</h3></div>
       <?php
         foreach($publicidades as $publicidade){

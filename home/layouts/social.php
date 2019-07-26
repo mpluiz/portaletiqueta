@@ -64,7 +64,7 @@
       <a class="btn btn-mais" href="/social">Veja +</a>
     </div> <!-- /.Col-8 -->
 
-    <div class="col-md-4 publicidade-lateral">
+    <div class="col-md-4 col-xs-12 publicidade-lateral">
       <div class="title-publicidade">
         <h3>PUBLICIDADE</h3>
       </div>

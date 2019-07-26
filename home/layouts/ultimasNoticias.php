@@ -68,7 +68,7 @@
       </div>
     </div> <!-- /.Col-8 -->
 
-    <div class="col-md-4 publicidade-lateral">
+    <div class="col-md-4 col-xs-12 publicidade-lateral">
       <div class="title-publicidade">
         <h3>PUBLICIDADE</h3>
       </div>
@@ -106,7 +106,7 @@
       ?>
     </div> <!-- /.Col-4 -->
 
-    <div class="col-md-12 publicidade-inferior">
+    <div class="col-md-12 col-xs-12 publicidade-inferior">
       <div class="title-publicidade">
         <h3>PUBLICIDADE</h3>
       </div>
