@@ -228,7 +228,7 @@ if (is_single() ){
           if ($ativo == true) {
             if ($posicao == 'menu') {
               echo '<a href="'.get_field('link', $publicidade->ID).'" target="_blank">
-                      <img src=' . get_field('imagem', $publicidade->ID, true) . ' width="100%" height="55px">
+                      <img src=' . get_field('imagem', $publicidade->ID, true) . ' width="100%" style="max-height: 80px;">
                     </a>';
             }
           }
