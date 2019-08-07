@@ -9,13 +9,14 @@
           $id = $noticia->ID;
           $mais_popular = get_field('mais_popular', $id);
           $thumbnail = get_thumbnail($id);
+          $category = get_the_category($id)[0]->name;
           if($thumbnail != ''){
             if($mais_popular == true){
               echo '
                 <div class="item"> 
                   <a class="post" href='.get_permalink($id).'>
                     <img src='.$thumbnail.'>
-                    <p class="cat-noticia">'.$category->name.'</p>           
+                    <p class="cat-noticia">'.$category.'</p>           
                   </a>
                   <a class="title-post" href='.get_permalink($id).'>
                     <h4>'.$noticia->post_title.'</h4>
