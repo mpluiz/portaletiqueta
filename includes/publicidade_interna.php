@@ -15,7 +15,7 @@ if ($id_gallery) {
 ?>
 
 <section id="publicidade-interna">
-  <div class="col-md-4 publicidade-lateral">
+  <div class="col-md-4 col-xs-12 publicidade-lateral">
     <?php
     if ($id_gallery) {
       if ($today <= $date) {

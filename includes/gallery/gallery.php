@@ -8,12 +8,12 @@ if ($post_gallery):
 
 ?>
 
-<div class="col-md-12 m-top"><div class="border-noticia"></div></div>
+<div class="col-md-12 col-xs-12 m-top"><div class="border-noticia"></div></div>
 
 <div id="gallery">
   <?php
     foreach ($gallery as $imagem){
-      echo '<div class="col-md-3 m-top">';
+      echo '<div class="col-md-3 col-xs-12 m-top">';
         echo '<a class="open" href="'.$imagem.'"><img class="img-gallery" src="'.$imagem.'"></a>';
       echo '</div>';
     }
