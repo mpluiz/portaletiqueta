@@ -8,7 +8,7 @@
         foreach ($videos as $video) :
           if (get_field('video_principal', $video->ID) == true) :
             ?>
-            <iframe id="video-principal" width="100%" src="https://www.youtube.com/embed/<?php echo get_field('link_do_video', $video->ID) ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <iframe id="video-principal" width="100%" height="auto" src="https://www.youtube.com/embed/<?php echo get_field('link_do_video', $video->ID) ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
           <?php
           endif;
         endforeach;
